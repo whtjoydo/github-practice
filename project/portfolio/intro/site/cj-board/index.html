@@ -1,0 +1,610 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title> 청주시 통합게시판 모니터링 </title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="청주시청, 시청">
+	<meta name="description" content="청주시청">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/floating.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script>
+    function fnShowTab(tabIdx){
+      var tabObj=document.getElementsByName("trTab");
+      for(var i=0; i<tabObj.length;i++){
+        if(tabObj[i].getAttribute("tabId")==tabIdx){
+          tabObj[i].style.display="";
+        }else{
+          tabObj[i].style.display="none";
+        }
+      }
+    }
+    window.onload=function(){
+      fnShowTab(1);
+	}
+	$(document).ready(function(){
+		$("#lnb ul li").click(function(){
+			$(this).addClass('current').siblings().removeClass('current'); //선택한 것에 addclass on, 그 외 on제거
+			return false
+		}); //선택한 것의 속성 id를 추출해서 클래스를 on, 그외엔 on 제거
+	});//ready func close;
+
+  </script>
+</head>
+
+<body id="main">
+<div id="wrapper">   
+   <div id="header">
+    <div class="wrap clearfix">
+		<h1 class="logo">
+			<a href="#"><img src="images/main/main_logo.gif" alt="청주시 통합게시판 모니터링"></a>
+		</h1>
+        <div class="gnb">
+            <ul>
+            <li class="link1"><a href="#" target="_blank" title="새창"><span>통합로그인</span></a></li>
+			</ul>
+		</div><!--//gnb//-->
+	</div><!--//wrap//-->
+  </div><!--//header//-->
+  
+    <hr />
+<div class="cleaarfix" id="container">
+	  <div class="wrap clearfix">
+	<section class="contents">
+			  <div id="lnb">
+				<ul class="tab">
+					<li class="current" data-tab="tab1" onclick="fnShowTab(1);"><a href="#">일반</a></li>
+					<li data-tab="tab2" onclick="fnShowTab(2);"><a href="#">민원</a></li>
+				</ul>
+			  </div>
+			 	<div name="trTab" tabId="1" >
+			    <div class="colum1">
+				    <h2 class="col"><img src="images/contents/cal_01.jpg" alt="게시판"/></h2>
+					  <ul class="row1">
+						<li>
+							<span class="img_area"><img src="images/contents/check_off_01.gif" alt="" width="100" height="96" /></span><br />
+							<span class="text">전체</span>
+						</li>
+						<li>
+							<span class="img_area"><img src="images/contents/check_off_01.gif" alt="" width="100" height="96" /></span><br />
+							<span class="text">시정소식</span>
+						</li>
+						<li>
+							<span class="img_area"><img src="images/contents/check_off_01.gif" alt="" width="100" height="96" /></span><br />
+							<span class="text">시정정책</span>
+						</li>
+						<li>
+							<span class="img_area"><img src="images/contents/check_off_01.gif" alt="" width="100" height="96" /></span><br />
+							<span class="text">시민참여</span>
+						</li>
+						<li>
+							<span class="img_area"><img src="images/contents/check_off_01.gif" alt="" width="100" height="96" /></span><br />
+							<span class="text">분야별정보</span>
+						</li>
+						<li>
+							<span class="img_area"><img src="images/contents/check_off_01.gif" alt="" width="100" height="96" /></span><br />
+							<span class="text">도시부동산</span>
+						</li>
+						<li>
+							<span class="img_area"><img src="images/contents/check_off_01.gif" alt="" width="100" height="96" /></span><br />
+							<span class="text">행정/민원</span>
+						</li>
+						<li>
+							<span class="img_area"><img src="images/contents/check_off_01.gif" alt="" width="100" height="96" /></span><br />
+							<span class="text">공공정보공개</span>
+						</li>
+						<li>
+							<span class="img_area"><img src="images/contents/check_off_01.gif" alt="" width="100" height="96" /></span><br />
+							<span class="text">경제/농정</span>
+						</li>
+						<li>
+							<span class="img_area"><img src="images/contents/check_off_01.gif" alt="" width="100" height="96" /></span><br />
+							<span class="text">정부 3.0 정보공개</span>
+						</li>
+						<li>
+							<span class="img_area"><img src="images/contents/check_off_01.gif" alt="" width="100" height="96" /></span><br />
+							<span class="text">감사정보</span>
+						</li>
+						<li>
+							<span class="img_area"><img src="images/contents/check_off_01.gif" alt="" width="100" height="96" /></span><br />
+							<span class="text">지역물가정보</span>
+						</li>
+						<li>
+							<span class="img_area"><img src="images/contents/check_off_01.gif" alt="" width="100" height="96" /></span><br />
+							<span class="text">복지</span>
+						</li>
+						<li>
+							<span class="img_area"><img src="images/contents/check_off_01.gif" alt="" width="100" height="96" /></span><br />
+							<span class="text">생활환경</span>
+						</li>
+					</ul>
+					<ul class="sub_depth_box">
+						<li><input name="radioDt[1]" type="radio" value="" class="radio"></input>자유게시판</li>
+						<li><input name="radioDt[2]" type="radio" value="" class="radio"></input>여성참여마당</li>
+						<li><input name="radioDt[3]" type="radio" value="" class="radio"></input>칭찬합시다</li>
+						<li><input name="radioDt[4]" type="radio" value="" class="radio"></input>홈페이지 오류사항</li>
+						<li><input name="radioDt[5]" type="radio" value="" class="radio"></input>설문조사</li>
+					</ul>
+				</div>
+								<img class="hr" src="images/main/section_bg.gif" />
+
+				<div class="colum2">
+				    <h2 class="col"><img src="images/contents/cal_02.jpg" alt="작성일"/></h2>
+					<ul class="row2">
+						<li>
+							<button type="crt01" title="기간_전체"><img src="images/contents/ctn_box2_46.gif" ALT="전체" /></button>
+						</li>
+						<li>
+							<button type="crt01" title="기간_1개월"><img src="images/contents/ctn_box2_48.gif" ALT="1개월" /></button>
+						</li>
+						<li>
+							<button type="crt01" title="기간_오늘"><img src="images/contents/ctn_box2_50.gif" ALT="오늘" /></button>
+						</li>
+					</ul>
+					<ul class="row2-2">
+						<li>
+							<button type="crt02" title="달력"><img src="images/contents/search_cal.gif" alt="날짜입력" /></button><input type="date"></input>
+						</li>
+							<li><span><img src="images/contents/navi_08.gif"></span></li>
+						<li>
+						  
+						</li>
+						<li>
+							<button type="crt02" title="달력"><img src="images/contents/search_cal.gif" alt="날짜입력" /></button><input type="date"></input>
+						</li>
+					</ul>
+				</div>
+								<img class="hr" src="images/main/section_bg.gif" />
+
+				<div class="colum3">
+				    <h2 class="col"><img src="images/contents/cal_03.gif" alt="첨부파일"/></h2>
+					<ul class="row3">
+						<li>
+							<span class="radio"><input name="radioDt[]" type="radio" value=""></input></span>
+							<span class="text">유</span>
+						</li>
+						<li>
+							<span class="radio"><input name="radioDt[]" type="radio" value=""></input></span>
+							<span class="text">무</span>
+						</li>
+					</ul>
+				</div>	
+													<img class="hr" src="images/main/section_bg.gif" />
+				<div class="colum4">
+					<ul class="row4">
+						<li><button name="search" type="submit" alt="검색">검색</button></li>
+						<li><button name="reset" type="reset" alt="초기화">초기화</button></li>
+					</ul>
+				</div>
+
+				</div><!--//tab1 close//-->
+				
+				<div name="trTab" tabId="2">
+					<div class="colum5">
+				    <h2 class="col"><img src="images/contents/minwon_03.gif" alt="미답변 현황 통계" title="미답변 현황 통계"/></h2>
+						<div class="col1">
+							<ul>
+								<h3 class="row"><img src="images/contents/chart01.gif" alt="미답변 현황" title="chart1" /></h3>
+								<li class="chartbox">
+									차트1번 박스
+								</li>
+							</ul>
+						</div>
+
+						<div class="col2">
+							<ul>
+								<h3 class="row"><img src="images/contents/chart02.gif" alt="기간별 답변 현황" title="chart2" /></h3>
+								<li class="chartbox">
+									차트2번 박스
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div><!--//tab2 close//-->
+	</section>
+	<section class="contents">
+		<div name="trTab" tabId="1">
+			<div id="board">
+				<div class="board_top clearfix">
+					<div class="floatLeft">
+						<button name="delete" type="delete" alt="삭제">삭제</button>
+					</div>
+					<div class="floatright">
+						<select name="pageUnit" id="pageUnit">
+							<option selected="selected" value="20">20개씩</option>
+							<option value="30">30개씩</option>
+							<option value="40">40개씩</option>
+							<option value="50">50개씩</option>
+						</select>
+						<select name="searchSt" id="searchSt">
+							<option selected="selected" value="dateCt">등록일순</option>
+							<option value="boardList">게시판명순</option>
+							<option value="writer">작성자순</option>
+						</select>
+					</div>
+				 </div>
+				   <!--<span>총 게시물 <em>182</em></span>-->
+				<table class="bbs_default_list" border="0" summary="통합게시판 검색 결과 리스트입니다.">
+						<colgroup>
+							<col width="10%">
+							<col width="20%">
+							<col width="10%">
+							<col width="">
+							<col width="10%">
+							<col width="10%">
+							<col width="10%">
+						</colgroup>
+					<thead class="th list">
+						<tr>
+						  <th scope="col"><input name="checkDt[]" type="checkbox" value="allcheck"></input></th>
+							<th scope="col">게시판명</th>
+							<th scope="col">번호</th>
+							<th scope="col">제목</th>
+							<th scope="col">파일</th>
+							<th scope="col">작성자</th>
+							<th scope="col">작성일</th>
+						</tr>
+					</thead>
+					<tbody class="text_center">
+							<tr>
+							<td><input name="checkDt[]" type="checkbox" value="" /></input></td>
+						  <td>시민참여-자유게시판</td>
+								<td>173</td>
+								<td class="subject ">					           				
+									<a href="./selectBbsNttView.do?key=270&amp;bbsNo=38&amp;nttNo=54478&amp;searchCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1&amp;integrDeptCode=" >
+									청주시보 제157-그2호</a></td>
+								<td>
+								<img src="images/contents/lnb_link2.png" alt="pdf" width="15px"/></td>
+								<td>공보관</td>
+								<td>2017.06.26</td>
+							</tr>
+
+
+							 <tr>
+								<td>
+									<input name="checkDt[]" type="checkbox" value=""></input></td>
+								<td>시민참여-자유게시판</td>
+								<td>173</td>
+								<td class="subject ">					           				
+									<a href="./selectBbsNttView.do?key=270&amp;bbsNo=38&amp;nttNo=54478&amp;searchCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1&amp;integrDeptCode=" >
+									청주시보 제157-그2호</a></td>
+								<td>&nbsp;</td>
+								<td>공보관</td>
+								<td>2017.06.26</td>
+							</tr>
+					</tbody>
+				</table>
+				</div><!--//view-->
+		</div>
+			<div name="trTab" tabId="2">
+			<div id="board" class="clearfix">
+						<div class="board_top clearfix">
+							<div class="floatleft">
+							</div>
+							<div class="floatright">
+							<select name="pageUnit" id="pageUnit">
+								<option selected="selected" value="20">20개씩</option>
+								<option value="30">30개씩</option>
+								<option value="40">40개씩</option>
+								<option value="50">50개씩</option>
+							</select>
+							<select name="searchSt" id="searchSt">
+								<option selected="selected" value="dateCt">등록일순</option>
+								<option value="boardList">게시판명순</option>
+								<option value="writer">작성자순</option>
+							</select>
+							<select name="listUnit" id="listUnit">
+								<option selected="selected" value="답변완료">답변완료</option>
+								<option value="답변처리중">답변처리중</option>
+								<option value="미답변">미답변</option>
+							</select>
+							<button name="research" type="search" alt="보기">보기</button>
+							</div>
+						 </div>
+						   <!--<span>총 게시물 <em>182</em></span>-->
+						<table class="bbs_default_list" border="0" summary="미답변 민원 현황입니다.">
+								<colgroup>
+									<col width="20%">
+									<col width="10%">
+									<col width="">
+									<col width="5%">
+									<col width="10%">
+									<col width="10%">
+									<col width="10%">
+								</colgroup>
+							<thead class="th list">
+								<tr>
+									<th scope="col">게시판명</th>
+									<th scope="col">번호</th>
+									<th scope="col">제목</th>
+									<th scope="col">파일</th>
+									<th scope="col">작성자</th>
+									<th scope="col">작성일</th>
+									<th scope="col">답변</th>
+								</tr>
+							</thead>
+							<tbody class="text_center">
+									<tr>
+										<td>시민참여-자유게시판</td>
+										<td>173</td>
+										<td class="subject ">					           				
+											<a href="./selectBbsNttView.do?key=270&amp;bbsNo=38&amp;nttNo=54478&amp;searchCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1&amp;integrDeptCode=" >
+											청주시보 제157-그2호</a></td>
+										<td>
+										<img src="images/contents/lnb_link2.png" alt="pdf" width="15" align="center" /></td>
+										<td>공보관</td>
+										<td>2017.06.26</td>
+										<td>답변완료</td>
+
+									</tr>
+
+
+									 <tr>
+										<td>시민참여-자유게시판</td>
+										<td>173</td>
+										<td class="subject "><a href="">청주시보 제157-그2호</a></td>
+										<td>&nbsp;</td>
+										<td>공보관</td>
+										<td>2017.06.26</td>
+										<td>답변완료</td>
+
+									</tr>
+
+									 <tr>
+										<td>시민참여-자유게시판</td>
+										<td>173</td>
+										<td class="subject ">					           				
+											<a href="./selectBbsNttView.do?key=270&amp;bbsNo=38&amp;nttNo=54478&amp;searchCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1&amp;integrDeptCode=" >
+											청주시보 제157-그2호</a></td>
+										<td>&nbsp;</td>
+										<td>공보관</td>
+										<td>2017.06.26</td>
+										<td>답변완료</td>
+
+									 </tr>
+									 <tr>
+										<td>시민참여-자유게시판</td>
+										<td>173</td>
+										<td class="subject ">					           				
+											<a href="./selectBbsNttView.do?key=270&amp;bbsNo=38&amp;nttNo=54478&amp;searchCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1&amp;integrDeptCode=" >
+											청주시보 제157-그2호</a></td>
+										<td>&nbsp;</td>
+										<td>공보관</td>
+										<td>2017.06.26</td>
+										<td>답변완료</td>
+
+									</tr>
+							  <tr>
+										<td>시민참여-자유게시판</td>
+										<td>173</td>
+										<td class="subject ">					           				
+											<a href="./selectBbsNttView.do?key=270&amp;bbsNo=38&amp;nttNo=54478&amp;searchCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1&amp;integrDeptCode=" >
+											청주시보 제157-그2호</a></td>
+										<td>&nbsp;</td>
+										<td>공보관</td>
+										<td>2017.06.26</td>
+										<td>답변완료</td>
+									</tr>
+							</tbody>
+						</table>
+					 </div>
+				</div><!--//view-->
+	</section>
+  </div><!--//con-->
+	<div class="clearfix" id="footer">
+		<div class="site_link">
+				<div class="wrap clearfix">
+					<h2 class="skip">청주시<br />관련링크</h2>
+				  <div class="sitelink_1 sitelink_cont">
+						<h3 class="h0"><button class="open">청주시부서/사업소</button></h3>
+								<div class="layer">
+									<h4>청주시부서/사업소</h4>
+										<div class="scroll">
+										<ul>
+											<li><a title="새창" target="_blank" href="/jiksok/index.do">직속부서</a></li>
+											<li><a title="새창" target="_blank" href="/gihoek/index.do">경제투자실</a></li>
+											<li><a title="새창" target="_blank" href="/anjeon/index.do">행정지원국</a></li>
+											<li><a title="새창" target="_blank" href="/bokji/index.do">복지교육국</a></li>
+											<li><a title="새창" target="_blank" href="http://ac.cheongju.go.kr">문화체육관광국</a></li>
+											<li><a title="새창" target="_blank" href="/nongjeong/index.do">농업정책국</a></li>
+											<li><a title="새창" target="_blank" href="/dosi/index.do">안전도시주택국</a></li>
+											<li><a title="새창" target="_blank" href="/geonseol/index.do">건설교통본부</a></li>
+											<li><a title="새창" target="_blank" href="/sdhealth/index.do">상당보건소</a></li>
+											<li><a title="새창" target="_blank" href="http://swhealth.cheongju.go.kr">서원보건소</a></li>
+											<li><a title="새창" target="_blank" href="http://hdhealth.cheongju.go.kr">흥덕보건소</a></li>
+											<li><a title="새창" target="_blank" href="/cwhealth/index.do">청원보건소</a></li>
+											<li><a title="새창" target="_blank" href="/nongup/index.do">농업기술센터</a></li>
+											<li><a title="새창" target="_blank" href="/sangsudo/index.do">상수도사업본부</a></li>
+											<li><a title="새창" target="_blank" href="http://jikjiworld.cheongju.go.kr">고인쇄박물관</a></li>
+											<li><a title="새창" target="_blank" href="http://cle.cheongju.go.kr">도서관평생학습본부</a></li>
+											<li><a title="새창" target="_blank" href="http://lll.cheongju.go.kr">평생학습관</a></li>
+											<li><a title="새창" target="_blank" href="http://library.cheongju.go.kr">청주시도서관</a></li>
+											<li><a title="새창" target="_blank" href="/environment/index.do">환경관리본부</a></li>
+											<li><a title="새창" target="_blank" href="http://www.cheongju.go.kr/land/index.do">청주랜드관리사업소</a></li>
+											<li><a title="새창" target="_blank" href="http://www.cheongju.go.kr/car/index.do">차량등록사업소</a></li>
+											<li><a title="새창" target="_blank" href="/safe/index.do">재난안전대책본부</a></li>
+											<li><a title="새창" target="_blank" href="/citydevelop/index.do">도시개발사업단</a></li>
+										</ul>
+										</div>
+											<div class="close"><a href="#n"><img alt="사이트목록 닫기" src="images/common/site_link_close.gif"></a></div>
+								</div>
+						</div>
+						<div class="sitelink_2 sitelink_cont">
+							<h3><button class="open">상당구청/면동</button></h3>
+								<div class="layer"  style="display: none;">
+									<h4>상당구청/면동</h4>
+										<div class="scroll">
+										<ul>
+											<li><a title="새창" target="_blank" href="/sangdang/index.do">상당구청</a></li>
+											<li><a title="새창" target="_blank" href="/nangseong/index.do">낭성면</a></li>
+											<li><a title="새창" target="_blank" href="/miwon/index.do">미원면</a></li>
+											<li><a title="새창" target="_blank" href="/gadeok/index.do">가덕면</a></li>
+											<li><a title="새창" target="_blank" href="/namil/index.do">남일면</a></li>
+											<li><a title="새창" target="_blank" href="/munui/index.do">문의면</a></li>
+											<li><a title="새창" target="_blank" href="/jungang/index.do">중앙동</a></li>
+											<li><a title="새창" target="_blank" href="/seong-an/index.do">성안동</a></li>
+											<li><a title="새창" target="_blank" href="/tap-daeseong/index.do">탑/대성동</a></li>
+											<li><a title="새창" target="_blank" href="/yeongun/index.do">영운동</a></li>
+											<li><a title="새창" target="_blank" href="/geumcheon/index.do">금천동</a></li>
+											<li><a title="새창" target="_blank" href="/yongdam/index.do">용담/명암/산성동</a></li>
+											<li><a title="새창" target="_blank" href="/yongam1/index.do">용암1동</a></li>
+											<li><a title="새창" target="_blank" href="/yongam2/index.do">용암2동</a></li>
+										</ul>
+										</div>
+											<div class="close"><a href="#n"><img alt="사이트목록 닫기" src="images/common/site_link_close.gif"></a></div>
+								</div>
+						</div>
+						<div class="sitelink_3 sitelink_cont">
+							<h3><button class="open">서원구청/면동</button></h3>
+								<div class="layer" style="display: none;">
+									<h4>서원구청/면동</h4>
+										<div class="scroll">
+										<ul>									
+											<li><a title="새창" target="_blank" href="/seowon/index.do">서원구청</a></li>
+											<li><a title="새창" target="_blank" href="/nami/index.do">남이면</a></li>
+											<li><a title="새창" target="_blank" href="/hyeondo/index.do">현도면</a></li>
+											<li><a title="새창" target="_blank" href="/sajik1/index.do">사직1동</a></li>
+											<li><a title="새창" target="_blank" href="/sajik2/index.do">사직2동</a></li>
+											<li><a title="새창" target="_blank" href="/sachang/index.do">사창동</a></li>
+											<li><a title="새창" target="_blank" href="/mochung/index.do">모충동</a></li>
+											<li><a title="새창" target="_blank" href="/sugok1/index.do">수곡1동</a></li>
+											<li><a title="새창" target="_blank" href="/sugok2/index.do">수곡2동</a></li>
+											<li><a title="새창" target="_blank" href="/sannam/index.do">산남동</a></li>
+											<li><a title="새창" target="_blank" href="/bunpyeong/index.do">분평동</a></li>
+											<li><a title="새창" target="_blank" href="/seonghwa/index.do">성화/개신/죽림동</a></li>
+										</ul>
+										</div>
+											<div class="close"><a href="#n"><img alt="사이트목록 닫기" src="images/common/site_link_close.gif"></a></div>
+								</div>
+						</div>
+						<div class="sitelink_4 sitelink_cont">
+							<h3><button class="open">흥덕구청/읍면동</button></h3>
+								<div class="layer" style="display: none;">
+									<h4>흥덕구청/읍면동</h4>
+										<div class="scroll">
+										<ul>
+											<li><a title="새창" target="_blank" href="/heungdeok/index.do">흥덕구청</a></li>
+											<li><a title="새창" target="_blank" href="/osong/index.do">오송읍</a></li>
+											<li><a title="새창" target="_blank" href="/gangnae/index.do">강내면</a></li>
+											<li><a title="새창" target="_blank" href="/oksan/index.do">옥산면</a></li>
+											<li><a title="새창" target="_blank" href="/uncheon/index.do">운천/신봉동</a></li>
+											<li><a title="새창" target="_blank" href="/bokdae1/index.do">복대1동</a></li>
+											<li><a title="새창" target="_blank" href="/bokdae2/index.do">복대2동</a></li>
+											<li><a title="새창" target="_blank" href="/gagyeong/index.do">가경동</a></li>
+											<li><a title="새창" target="_blank" href="/bongmyeong1/index.do">봉명1동</a></li>
+											<li><a title="새창" target="_blank" href="/bongmyeong2/index.do">봉명2동/송정동</a></li>
+											<li><a title="새창" target="_blank" href="/gangseo1/index.do">강서1동</a></li>
+											<li><a title="새창" target="_blank" href="/gangseo2/index.do">강서2동</a></li>
+										</ul>
+										</div>
+											<div class="close"><a href="#n"><img alt="사이트목록 닫기" src="images/common/site_link_close.gif"></a></div>
+								</div>
+						</div>
+						<div class="sitelink_5 sitelink_cont">
+							<h3><button class="open">청원구청/읍면동</button></h3>
+								<div class="layer" style="display: none;">
+									<h4>청원구청/읍면동</h4>
+										<div class="scroll">
+										<ul>
+											<li><a title="새창" target="_blank" href="/cheongwon/index.do">청원구청</a></li>
+											<li><a title="새창" target="_blank" href="/naesu/index.do">내수읍</a></li>
+											<li><a title="새창" target="_blank" href="/ochang/index.do">오창읍</a></li>
+											<li><a title="새창" target="_blank" href="/bugi/index.do">북이면</a></li>
+											<li><a title="새창" target="_blank" href="/uam/index.do">우암동</a></li>
+											<li><a title="새창" target="_blank" href="/naedeok1/index.do">내덕1동</a></li>
+											<li><a title="새창" target="_blank" href="/naedeok2/index.do">내덕2동</a></li>
+											<li><a title="새창" target="_blank" href="/yulyang/index.do">율량/사천동</a></li>
+											<li><a title="새창" target="_blank" href="/ogeunjang/index.do">오근장동</a></li>
+										</ul>
+										</div>
+											<div class="close"><a href="#n"><img alt="사이트목록 닫기" src="images/common/site_link_close.gif"></a></div>
+								</div>
+						</div>
+						<div class="sitelink_6 sitelink_cont">
+							<h3><button class="open">관련사이트</button></h3>
+								<div class="layer" style="display: none;">
+									<h4>관련사이트</h4>
+										<div class="scroll">
+										<ul>
+											<li><a title="새창" target="_blank" href="/market/index.do">농수산물도매시장</a></li>
+											<li><a title="새창" target="_blank" href="/stat/index.do">통계정보</a></li>
+											<li><a title="새창" target="_blank" href="http://musimi.cheongju.go.kr">무심워터월드</a></li>
+											<li><a title="새창" target="_blank" href="http://www.cheongju.go.kr/uamsan/index.do">우암산자연생태사이트</a></li>
+											<li><a title="새창" target="_blank" href="/child/index.do">어린이홈페이지</a></li>
+											<li><a title="새창" target="_blank" href="http://www.cjwf.net/main.php ">청주복지재단</a></li>
+											<li><a title="새창" target="_blank" href="/wonheungi/index.do">원흥이두꺼비생태공원</a></li>
+											<li><a title="새창" target="_blank" href="http://photo.cheongju.go.kr">청주시포토갤러리</a></li>
+											<li><a title="새창" target="_blank" href="/readygo/index.do">레디고청주</a></li>
+											<li><a title="새창" target="_blank" href="http://cheongju.grandculture.net/?local=cheongju ">디지털청주문화대전</a></li>
+											<li><a title="새창" target="_blank" href="http://cjsisul.or.kr/ ">청주시시설관리공단</a></li>
+											<li><a title="새창" target="_blank" href="http://cjcity.evermbc.com/p12/site/Do.jsp?menuSeq=215 ">청주시사이버평생교육원</a></li>
+											<li><a title="새창" target="_blank" href="http://bio.cheongju.go.kr">청원생명축제</a></li>
+											<li><a title="새창" target="_blank" href="http://edu.cheongju.go.kr">정보화교육</a></li>
+											<li><a title="새창" target="_blank" href="http:///www.purushop.com">청원생명쇼핑몰</a></li>
+											<li><a title="새창" target="_blank" href="http://museum.cheongju.go.kr">대청호미술관</a></li>
+											<li><a title="새창" target="_blank" href="http://race.cheongju.go.kr">대청호마라톤</a></li>
+											<li><a title="새창" target="_blank" href="http://1388cw.or.kr/main.php">청소년상담복지센터</a></li>
+											<li><a title="새창" target="_blank" href="http://okhwa.cheongju.go.kr">옥화자연휴양림</a></li>
+											<li><a title="새창" target="_blank" href="http://www.ochangcmc.or.kr/">오창과학산업단지</a></li>
+											<li><a title="새창" target="_blank" href="http://osong.mohw.go.kr/">오송생명과학단지</a></li>
+											<li><a title="새창" target="_blank" href="http://www.cjmh.or.kr/">청주문화원</a></li>
+											<li><a title="새창" target="_blank" href="http://chnam.cb21.net/index.jsp ">청남대</a></li>
+											<li><a title="새창" target="_blank" href="http://toy.cheongju.go.kr">장난감대여</a></li>
+											<li><a title="새창" target="_blank" href="http://pd.invil.org/ ">평동전통떡정보화마을</a></li>
+											<li><a title="새창" target="_blank" href="http://godmee.cheongju.go.kr">청원고드미마을</a></li>
+											<li><a title="새창" target="_blank" href="http://godmee.invil.org/">고드미정보화마을</a></li>
+											<li><a title="새창" target="_blank" href="http://greenfrog.invil.org/">청개구리쌀정보화마을</a></li>
+											<li><a title="새창" target="_blank" href="http://malmi.cheongju.go.kr">말미장터마을</a></li>
+											<li><a title="새창" target="_blank" href="http://bulat.cheongju.go.kr">문의벌랏한지마을</a></li>
+											<li><a title="새창" target="_blank" href="http://obaksa.cheongju.go.kr">오박사마을</a></li>
+											<li><a title="새창" target="_blank" href="http://lotus.cheongju.go.kr">강내연꽃마을</a></li>
+											<li><a title="새창" target="_blank" href="http://junhaul.cheongju.go.kr">전하울산촌생태마을</a></li>
+											<li><a title="새창" target="_blank" href="http://ungyo.cheongju.go.kr">운교마을</a></li>
+											<li><a title="새창" target="_blank" href="http://eoam.cheongju.go.kr">어암리산촌생태마을</a></li>
+											<li><a title="새창" target="_blank" href="http://www.청주시상권활성화관리재단.com/">청주시상권활성화관리재단</a></li>
+											<li><a title="새창" target="_blank" href="http://garo.cheongju.go.kr/">가로등 보안등관리시스템</a></li>
+											<li><a title="새창" target="_blank" href="http://childwelfare.cheongju.go.kr">아동복지관</a></li>
+											<li><a title="새창" target="_blank" href="http://sorori.cheongju.go.kr/main.php">청주소로리볍씨</a></li>
+											<li><a title="새창" target="_blank" href="http://cjhappycall.or.kr/">청주해피콜 이동지원센터</a></li>
+											<li><a title="새창" target="_blank" href="http://www.cjculture.org/home/main.php">청주시문화산업진흥재단</a></li>
+											<li><a title="새창" target="_blank" href="http://www.curs.or.kr">청주시도시재생지원센터</a></li>
+											<li><a title="새창" target="_blank" href="http://aml.cheongju.go.kr">농기계임대사업</a></li>
+											<li><a title="새창" target="_blank" href="http://www.청주음식.kr">모범음식점</a></li>
+										</ul>
+										</div>
+											<div class="close"><a href="#n"><img alt="사이트목록 닫기" src="images/common/site_link_close.gif"></a></div>
+								</div>
+						</div>
+			</div><!--//wrap-->
+		</div><!-- //site_link  -->
+	 <div class="wrap clearfix">
+		<div class="foot_logo">
+			<img src="images/main/foot_logo.gif" alt="청주시 CheongjuCity">
+		</div>
+		<div class="colgroup">
+			<div class="footer_navi clearfix">
+				<ul class="clearfix">
+					<li><a href="/www/contents.do?key=586">저작권보호정책</a></li>
+					<li><a href="/www/contents.do?key=587"><strong><span style="color:#fff600; font-size:15px;">개인정보처리방침</span></strong></a></li>
+					<li><a href="/www/mailingReqst.do?key=583">메일링신청</a></li>
+					<li><a href="/www/contents.do?key=593">뷰어다운로드</a></li>
+					<li><a title="파일 다운로드" target="_blank" href="/www/download/cj_numbers.pdf">행정전화번호부</a></li>
+					<li><a title="파일 다운로드" target="_blank" href="/www/download/cj_number_01.pdf">경제총조사상황실전화번호</a></li>
+					<li><a href="/www/sub.do?key=589">사이트맵</a></li>
+					<li><a href="/www/sub.do?key=581">찾아오시는길</a></li>
+				</ul>
+			</div>
+			<div class="footer_info">
+				<address>[28542] 충청북도 청주시 상당구 상당로 155 (북문로3가) &nbsp;&nbsp;<a href="/www/sub.do?key=581">찾아오시는길</a> <span class="tel">대표전화 : 043-201-0001</span></address>
+				<p class="copy">Copyright ⓒ 1998-2014 Cheongju City. All Rights Reserved.</p>
+				<p class="warning">본 웹사이트에 게시된 이메일 주소가 자동수집되는 것을 거부하며, 위반시 “정보통신망법”에 의해 처벌됨을 유념하시기 바랍니다.</p>
+			</div>
+		</div><!--//colgroup-->
+	 </div><!--//wrap-->
+	</div>
+
+</body>
+</html>

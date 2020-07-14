@@ -1,0 +1,128 @@
+* {box-sizing:border-box;}
+* {font-family: 'Noto Sans KR', sans-serif;}
+button, a {font-family: 'Noto Sans KR', sans-serif; outline:none;}
+
+/*공통요소 css*/
+a.btn {
+    position:relative;
+    display:block;
+    width:80%;
+    padding:15px 0;
+    font-size:15px;
+    font-weight:300;
+    text-align:left;
+    color:#ff5a00;
+    transition: all 0.3s ease-in-out;
+}
+
+a.btn:before {
+    content:'';
+    position:absolute;
+    top:24px;
+    right:37px;
+    width:0;
+    height:9px;
+    border-top:none;
+    border-left:2px solid transparent;
+    border-right:1px solid #ff5a00;
+    border-bottom:1px solid transparent;
+    transform:rotate(-45deg)
+}
+
+a.btn:after {
+    content:'';
+    position:absolute;
+    top:17px;
+    right:35px;
+    width:45px;
+    height:14px;
+    border-bottom:1px solid #ff5a00;
+    transition: all 0.3s ease-in-out;
+}
+
+a.btn.type02 {
+    position:relative;
+    display:block;
+    width:100%;
+    padding:15px 40px;
+    opacity:0.5;
+    border: 1px solid #fff;
+}
+
+a.btn.type02:before {
+    top: 20px;
+    right: 40px;
+    width: 0;
+    height: 15px;
+    border-top: none;
+    border-left: 5px solid transparent;
+}
+
+a.btn.type02:after {
+    width:55px;
+}
+a.btn.type02:hover {
+    opacity:1;
+}
+
+a.btn.type02:hover::after {
+    width:100px;
+}
+
+a.btn.type03 {
+    width: 100%;
+    padding:15px 25px;
+    font-size:16px;
+    color:#000;
+}
+
+a.btn.type03:after {
+    content: '';
+    position: absolute;
+    border-bottom:1px solid #333;
+    top: 25px;
+}
+
+a.btn.type03:before {
+    top: 34px;
+    right: 35px;
+    width: 10px;
+    height: 10px;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+}
+
+a.btn.type04 {
+    width: 100%;
+    padding: 55px 35px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+a.btn.type04:hover,
+a.btn.type04:focus {
+    background:orange;
+    border: 1px solid transparent;
+    z-index:10;
+    transition: all 0.3s ease-in-out;
+}
+
+a.btn.type04:after,
+a.btn.type04:before {
+    display:none;
+}
+
+span.em_b {
+    font-weight: 600;
+}
+
+span.em_blue {
+    color:#1686d4;
+}
+
+.m_br {
+    display:none;
+}

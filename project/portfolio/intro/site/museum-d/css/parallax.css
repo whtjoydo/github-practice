@@ -1,0 +1,342 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700,900&display=swap&subset=korean');
+body {
+    padding:0;
+    margin:0;
+    min-width:1200px;
+}
+
+header, nav, section, footer {
+    width:100%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {
+    position:fixed;
+    top:0;
+    width: 100%;
+    height:60px;
+    background: rgba(255,255,255,0.5);
+    z-index:100;
+    display: flex;
+    align-items: center;
+    transition:all 0.7s 0.3s ease;
+}
+
+header.hideBar {
+    transform:translate(0, -100%)
+}
+
+header .header_wrap {
+    width: 1500px;
+    min-width: 1200px;
+    padding:5% 0;
+    margin: 0 auto;
+}
+
+header .logo {
+    display: block;
+    width: 170px;
+    height: 39px;
+    text-indent: -9999px;
+    font-size:0;
+    background:url('../images/parallax/header_dmuseum.png') 0 0 no-repeat;
+}
+
+.menuBt {
+    position: relative;
+    display:block;
+    width:30px;
+    height:40px;
+    margin:15px 20px 0 0;
+    padding:13px 9px;
+    color:transparent;
+    overflow:hidden;
+    outline:none;
+    font-size: 1px;
+    text-indent: -9999px;
+}
+
+.menuBt span {
+    position: absolute;
+    display: block;
+    width:100%;
+    height: 2px;
+    margin-top:10px;
+    background-color: #fff;
+    border-radius: 1px;
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+}
+
+.menuBt span.bar1 {
+    margin-top:0;
+}
+
+/* .menuBt span.bar2 {
+    margin-top:12px;
+} */
+
+.menuBt span.bar3 {
+    margin-top:21px;
+}
+
+.menuBt:hover .bar1,
+.menuBt.on .bar1 {
+    margin-top:10px;
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+.menuBt:hover .bar3,
+.menuBt.on .bar3 {
+    margin-top:10px;
+    -webkit-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+
+.menuBt:hover .bar2,
+.menuBt.on .bar2 {
+	opacity: 0;
+}
+
+section {
+    overflow:hidden;
+}
+/* 
+section.sec01 {
+    background-image:url('../images/parallax/sec02.jpg');
+}
+
+section.sec02 {
+    background-image:url('../images/parallax/sec01.jpg');
+}
+
+section.sec03 {
+    background-image:url('../images/parallax/sec03.jpg');
+    background-position-y:80%;
+} */
+
+section.sec01 {
+    background:url('../images/parallax/img01.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-5;
+}
+section.sec01 .contents { 
+    text-align: center;
+    color:#fff;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+/* section.sec01 .contents {
+    color:#fff;
+    max-width:80%;
+    position: relative;
+    left:50%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size:1.5rem;
+    text-align:center;
+    height:100vh;
+} */
+
+section.sec01 .contents h1 {
+    font-size:5rem;
+    margin-bottom:1rem;
+    font-weight:700;
+    opacity:0.5;
+    transition:none 20s ease-out;
+}
+
+section.sec01 .contents h1 i {
+    display:inline-block;
+    width:150px;
+    height:3px;
+    margin:0 10px 25px;
+    background: #fff;
+}
+
+section.sec01 .contents h1 {
+    -webkit-animation-name:opacity;
+    animation-name:opacity;
+    -webkit-transition-duration:15s;
+    animation-duration:15s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes opacity {
+    from,
+    50%,
+    to {
+        opacity:0.8;
+    }
+    25%,
+    70% {
+        opacity:0.2;
+    }
+}
+
+@keyframes opacity {
+    from,
+    50%,
+    to {
+        opacity:0.8;
+    }
+    25%,
+    70% {
+        opacity:0.2;
+    }
+}
+
+
+section.sec01 .contents .musicBox {
+    width:0;
+    height:0;
+}
+
+section.sec02 {
+    position: relative;
+    z-index: 20;
+    padding: 100vh 0 0 0;
+}
+
+section.sec02 .box.n1 h2 {
+    margin-bottom:50px;
+    border-bottom: 1px solid #fff;
+}
+
+
+section.sec02 .box {
+    height:100vh;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.sec02 .box .subtance {
+    font-size:1rem;
+    font-weight:300;
+    line-height: 30px;
+}
+
+section.sec02 .box.n1 {
+    padding: 30px 0;
+    color:#fff;
+    background:url('../images/parallax/sound_bg.jpg') rgba(0,0,0,0.5);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+section.sec02 .box.n2 {
+    padding:5% 15%;
+    background: rgba(206,209,214,0.8);
+}
+
+section.sec02 .box h2 {
+    font-size:3rem;
+    font-weight: 700;
+    margin-bottom:50px;
+    border-bottom:1px solid #333;
+}
+
+section.sec02 .box ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.sec02 .box ul li {
+    width:100%;
+    margin-right:100px;
+}
+
+section.sec02 .box ul li:last-child {
+    margin-right:0;
+}
+
+section.sec02 .box ul li .img {
+    width:100%;
+    height:300px;
+    background-position: center;
+}
+
+section.sec02 .box ul li:nth-child(1) .img {
+    background-image:url('../images/parallax/img03.jpg');
+}
+
+section.sec02 .box ul li:nth-child(2) .img {
+    background-image:url('../images/parallax/img02.jpg');
+}
+
+section.sec02 .box ul li:nth-child(3) .img {
+    background-image:url('../images/parallax/img04.jpg');
+}
+
+section.sec02 .box ul li strong {
+    display: block;
+    font-size:24px;
+    margin:30px 0 0 0;
+}
+
+section.sec02 .box ul li p {
+    display: block;
+    margin:10px 0;
+    height:150px;
+}
+
+section.sec02 .box ul li span {
+    display: block;
+    width:100%;
+    padding:15px 0;
+    border:1px solid rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+
+section.sec02 .box ul li:hover span {
+    border:1px solid rgba(0,0,0,1);
+    transition:all 1s ease-out;
+}
+
+section.sec03 {
+    height:100vh;
+    display: flex;
+    text-align: center;
+    color: #fff;
+    background:rgba(0,0,0,0.9);
+    z-index: 20;
+    align-items: center;
+    justify-content: center;
+}
+
+section.sec03 > div {
+    font-weight:700;
+    text-shadow:6px 11px 0px rgba(255,255,255,0.1);
+}
+
+section.sec03 .copy {
+    font-size:3rem;
+    margin-bottom:35px;
+}
+
+section.sec03 .copyw {
+    font-size:2rem;
+}

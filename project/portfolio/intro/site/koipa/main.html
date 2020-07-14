@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>NEW 한국지식재산보호원</title>
+    <link rel="stylesheet" href="css/common/defult.css" />
+    <link rel="stylesheet" href="css/common/common.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" media="screen and (max-width:1200px)" href="css/responsive-common.css" />
+    <link rel="stylesheet" media="screen and (max-width:1200px)" href="css/responsive-main.css" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&display=swap&subset=korean" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.0.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- [if lt IE 11]>
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+        <script type="text/javascript" src="js/flexibility.js"></script>
+    <![endif]-->
+    <!--[if lt IE 7]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]> 
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js">IE7_PNG_SUFFIX=".png";</script> 
+    <![endif]-->
+</head>
+<body>
+    <div class="modal">
+        <div class="modal_inner">
+            <h2>잠시만요!</h2>
+            <p>본 홈페이지는 <em class="em_red">IE 10(인터넷 익스플로러)이하</em> 환경에서<br> 불안정하게 뜰 수 있습니다.<br><br>
+            구글 크롬(Chrome) 브라우저를 사용해주시기 바랍니다.</p>
+            <a href="https://www.google.com/intl/ko/chrome/" target="_blank" title="크롬 브라우저 다운로드">크롬 브라우저 다운로드</a>
+            <button class="close">닫기</button>
+        </div>
+    </div>
+    <script>
+        var uatrident = navigator.userAgent.match(/Trident\/7.0/); 
+        var uanet = navigator.userAgent.match(/.NET4.0E/);
+        var IE11 = uatrident && uanet;
+        var IEold = ( navigator.userAgent.match(/mise/i) != null );
+        if(IE11 || IEold){
+            $(".modal").attr('style', 'display:block')
+        }
+
+        $(document).ready(function(){
+            $(".modal .modal_inner .close").click(function(){
+                $(".modal").attr('style', 'display:none')
+            });
+        });
+    </script>
+    <header>
+        <div class="headerTop">
+            <div class="wrap">
+                <div class="logo">
+                    <h1>
+                        <a href="/main.html">한국지식재산보호원</a>
+                    </h1>
+                </div>
+                <div class="gnbLeft">                    
+                    <ul>
+                        <li class="site01">
+                            <a href="http://www.ip-navi.or.kr/newindex.navi" target="_blank" title="IP-NAVI 새창">IP-NAVI</a>
+                        </li>
+                        <li class="site02">
+                            <a href="https://www.pcc.or.kr/pcc/" target="_blank" title="공익변리사 특허상담센터 새창">공익변리사 특허상담센터</a>
+                        </li>
+                        <li class="site03">
+                            <a href="https://www.tradesecret.or.kr/main.do" target="_blank" title="영업비밀보호센터 새창">영업비밀보호센터</a>
+                        </li>
+                        <li class="site04">
+                            <a href="info/info01.html" title="정보공개 현재창">정보공개</a>
+                        </li>
+                    </ul>
+                </div><!--gnbleft close-->
+                <div class="gnbRight">
+                    <ul>
+                        <li><a href="main.html">HOME</a></li>
+                        <li><a href="">사이트맵</a></li>
+                        <li class="lang"><a href="">KOR</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--headerTop close-->
+        <div class="headerBottom">
+            <div class="lnb">
+                <nav>
+                    <h2 class="hide">메뉴</h2>
+                    <div class="depth1">
+                        <ul class="depth1_list">
+                            <li class="depth1_item menu01">
+                                <a href="" class="depth1_text">KOIPA소개</a>
+                                <div class="depth2">
+                                    <div class="depth2_title">KOIPA소개</div>
+                                    <ul class="depth2_list">
+                                        <li><a href="sub/sub_content02.html" class="depth2_text">인사말</a></li>
+                                        <li><a href="sub/sub.html" class="depth2_text">설립목적 및 연혁</a></li>
+                                        <li><a href="" class="depth2_text">미션&비전</a></li>
+                                        <li><a href="sub/sub_content03.html" class="depth2_text">조직도</a></li>
+                                        <li><a href="" class="depth2_text">윤리경영</a></li>
+                                        <li><a href="" class="depth2_text">경영공시</a></li>
+                                        <li><a href="" class="depth2_text">오시는 길</a></li>
+                                        <li><a href="" class="depth2_text">홍보자료</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth1_item menu02">
+                                <a href="" class="depth1_text">주요사업</a>
+                                <div class="depth2">
+                                    <div class="depth2_title">
+                                        <span>주요사업</span>
+                                    </div>
+                                    <ul class="depth2_list">
+                                        <li><a href="" class="depth2_text">국내 위조상품 단속지원</a></li>
+                                        <li><a href="" class="depth2_text">지식재산권보호 인식제고</a></li>
+                                        <li><a href="" class="depth2_text">국제 지재권분쟁 대응전략</a></li>
+                                        <li><a href="" class="depth2_text">국제IP분쟁대응기반 구축</a></li>
+                                        <li><a href="" class="depth2_text">사회적약자의 지재권 보호지원</a></li>
+                                        <li><a href="" class="depth2_text">K-브랜드 보호지원</a></li>
+                                        <li><a href="" class="depth2_text">지재권 분쟁 공동대응 지원</a></li>
+                                        <li><a href="" class="depth2_text">중국알리바바 위조상품 대응지원</a></li>
+                                        <li><a href="" class="depth2_text">영업비밀 보호지원</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth1_item menu03">
+                                <a href="" class="depth1_text">알림마당</a>
+                                <div class="depth2">
+                                    <div class="depth2_title">알림마당</div>
+                                    <ul class="depth2_list">
+                                        <li><a href="" class="depth2_text">공지사항</a></li>
+                                        <li><a href="" class="depth2_text">사업공고</a></li>
+                                        <li><a href="" class="depth2_text">입찰공고</a></li>
+                                        <li><a href="" class="depth2_text">채용공고</a></li>
+                                        <li><a href="" class="depth2_text">정보화사업안내</a></li>
+                                        <li><a href="" class="depth2_text">세미나/행사일정</a></li>
+                                        <li><a href="" class="depth2_text">업무협력현황</a></li>
+                                        <li><a href="" class="depth2_text">포토갤러리</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth1_item menu04">
+                                <a href="" class="depth1_text">참여마당</a>
+                                <div class="depth2">
+                                    <div class="depth2_title">참여마당</div>
+                                    <ul class="depth2_list">
+                                        <li><a href="" class="depth2_text">클린신고센터</a></li>
+                                        <li><a href="" class="depth2_text">고객제안</a></li>
+                                        <li><a href="" class="depth2_text">자료실</a></li>
+                                        <li><a href="" class="depth2_text">법령정보</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth1_item menu05">
+                                <a href="" target="_blank" class="depth1_text">분쟁조정위원회</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fullup_menu">
+                        <div class="fm_gnb">
+                            <ul>
+                                <li><a href="">정보공개</a></li>
+                                <li><a href="">SITEMAP</a></li>
+                            </ul>
+                        </div>
+                        <ul class="depth1_list">
+                            <li class="depth1_item">
+                                <h3><a href="" class="depth1_text">KOIPA소개</a></h3>
+                                <ul class="depth2_list">
+                                    <li class="depth2_item"><a href="sub/sub_content02.html" class="depth2_text">인사말</a></li>
+                                    <li class="depth2_item"><a href="sub/sub.html" class="depth2_text">설립목적 및 연혁</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">미션&비전</a></li>
+                                    <li class="depth2_item"><a href="sub/sub_content03.html" class="depth2_text">조직도</a></li>
+                                    <li class="depth2_item has"><a href="" class="depth2_text">윤리경영</a>
+                                        <ul class="depth3_list">
+                                            <li><a href="" class="depth3_text">윤리헌장</a></li>
+                                            <li><a href="" class="depth3_text">서비스헌장</a></li>
+                                            <li><a href="" class="depth3_text">클린신고센터</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">경영공시</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">오시는 길</a></li>
+                                    <li class="depth2_item has"><a href="" class="depth2_text">홍보자료</a>
+                                        <ul class="depth3_list">
+                                            <li><a href="" class="depth3_text">CI</a></li>
+                                            <li><a href="" class="depth3_text">동영상</a></li>
+                                            <li><a href="" class="depth3_text">인포그래픽/웹툰</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="depth1_item">
+                                <h3><a href="" class="depth1_text">주요사업</a></h3>
+                                <ul class="depth2_list">
+                                    <li class="depth2_item has"><a href="" class="depth2_text">국내 위조상품 단속지원</a>
+                                        <ul class="depth3_list">
+                                            <li><a href="" class="depth3_text">오프라인 단속지원</a></li>
+                                            <li><a href="" class="depth3_text">온라인 단속지원</a></li>
+                                            <li><a href="" class="depth3_text">지재권 허위표시 신고센터</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2_item has"><a href="" class="depth2_text">지식재산권보호 인식제고</a>
+                                        <ul class="depth3_list">
+                                            <li><a href="" class="depth3_text">온라인 커뮤니티 홍보</a></li>
+                                            <li><a href="" class="depth3_text">미디어 홍보</a></li>
+                                            <li><a href="" class="depth3_text">지식재산 보호 캠페인 교육</a></li>
+                                            <li><a href="" class="depth3_text">위조상품 근절 청소년 교육</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">국제 지재권분쟁 대응전략</a></li>
+                                    <li class="depth2_item has"><a href="" class="depth2_text">국제IP분쟁대응기반 구축</a>
+                                        <ul class="depth3_list">
+                                            <li><a href="" class="depth3_text">국제지재권 분쟁정보 제공</a></li>
+                                            <li><a href="" class="depth3_text">지재권 판례동향정보 제공</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">사회적약자의 지재권 보호지원</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">K-브랜드 보호지원</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">지재권 분쟁 공동대응 지원</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">중국알리바바 위조상품 대응지원</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">영업비밀 보호지원</a></li>
+                                </ul>
+                            </li>
+                            <li class="depth1_item">
+                                <h3><a href="" class="depth1_text">알림마당</a></h3>
+                                <ul class="depth2_list">
+                                    <li class="depth2_item"><a href="" class="depth2_text">공지사항</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">사업공고</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">입찰공고</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">채용공고</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">정보화사업안내</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">세미나/행사일정</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">업무협력현황</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">포토갤러리</a></li>
+                                </ul>
+                            </li>
+                            <li class="depth1_item">
+                                <h3><a href="" class="depth1_text">참여마당</a></h3>
+                                <ul class="depth2_list">
+                                    <li class="depth2_item"><a href="" class="depth2_text">고객제안</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">자료실</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">법령정보</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text">클린신고센터</a></li>
+                                </ul>
+                            </li>
+                            <li class="depth1_item newWin">
+                                <h3><a href="" target="_blank" class="depth1_text">분쟁조정위원회</a></h3>
+                                <ul class="depth2_list">
+                                    <li class="depth2_item"><a href="" class="depth2_text blank" target="_blank">분쟁조정제도</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text blank" target="_blank">분쟁조정위원회</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text blank" target="_blank">정보자료</a></li>
+                                    <li class="depth2_item"><a href="" class="depth2_text blank" target="_blank">분쟁조정신청</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="close">
+                            <div class="close_inner wrap">
+                                <button class="fullMenu_close">닫기</button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="lnbRight">
+                    <button type="button" class="allmenu">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                        전체메뉴 열기
+                    </button>
+                    <button class="search_btn">검색</button>
+                </div>
+                <div class="searchWrap">
+                    <div class="wrap">
+                        <div class="search_box">
+                            <div>
+                                <label for="search" class="hide">검색</label>
+                                <input class="fullWrap_input" type="text" id="search" name="seach" value="" size="15" maxlength="50" placeholder="검색어를 입력해주세요.">
+                                <button class="keyboard">가상키보드</button>
+                            </div>
+                            <button class="submit">검색</button><!--submit input-->
+                        </div>
+                        <div class="close">
+                            <button>닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!--lnb close-->
+        </div><!--headerBottom close-->
+    </header><!--header close-->
+    <section class="contents">
+        <article class="visual wrap">
+            <div class="inner_wrap swiper-container swiper01">
+                <div class="swiper-wrapper">
+                    <div class="on swiper-slide">
+                        <div class="copy">지식재산보호는 <br><span class="point">국가경쟁력</span>의 <br class="m_br">핵심입니다.</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="copy">지식재산 보호전략은 <br><span class="point">기업성장</span>의 <br class="m_br">필수입니다.</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="copy">위조상품 유통근절은 <br><span class="point">상거래 질서 확립</span>의 <br class="m_br">근간입니다.</div>
+                    </div>
+                    <div class="substance">지식재산권 보호기반을 조성하고 <br>유관기관 협력 네트워크를 통해 국내 산업발전과 지식재산분야의 국제경쟁력 강화를 위해 창립되었습니다.</div>
+                </div>
+            </div>
+            <div class="bottonGroup">
+                <a href="" class="btn type04"><span>신고센터</span></a>
+                <a href="" class="btn type04"><span>고객제안</span></a>
+            </div>
+            <div class="visual_slick swiper-pagination">
+                <span data-id="n1">1</span>
+                <span data-id="n2">2</span>
+                <span data-id="n3">3</span>
+            </div>
+            <script>
+                var swiper = new Swiper('.swiper01', {
+                effect:'fade',
+                fadeEffect: {
+                    delay:600,
+                    crossFade: true
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                autoplay:true
+                });
+            </script>
+        </article>
+        <article class="art01">
+            <div class="wrap">
+                <div class="listBox">
+                    <div class="tab">
+                        <ul class="list_tabs">
+                            <li data-id="list01" class="on">공지사항</li>
+                            <li data-id="list02">채용공고</li>
+                            <li data-id="list03">사업공고</li>
+                            <li data-id="list04">입찰공고</li>
+                        </ul>
+                        <a href="" class="more"><span>더보기</span></a>
+                    </div>
+                    <div id="list01" class="conBox on">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">제15회 특허·상표 판례연구 논문 공모전 요강</span>
+                                    <span class="date">2020.03.16</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">2020년 지식재산 정보서비스 벤처기업 육성사업 주관기관 모집 공고</span>
+                                    <span class="date">2020.02.14</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">특허정보진흥센터 소장 공모</span>
+                                    <span class="date">2020.02.13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">2020년 특허청 지원 사업 합동설명회</span>
+                                    <span class="date">2020.02.11</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">2019년도 지식재산보호 종합포털 IP-NAVI 만족도 조사 안내</span>
+                                    <span class="date">2020.01.05</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="list02" class="conBox">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">2020년 제3차 인력채용(재택 모니터링단) 서류전형 결과 공지</span>
+                                    <span class="date">2020.03.26</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">한국지식재산보호원 2020년 1분기 임직원 친인척 채용 현황</span>
+                                    <span class="date">2020.03.26</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">[채용공고_2020년 제3차] 한국지식재산보호원 제3차 인력채용 변경 공고</span>
+                                    <span class="date">2020.03.20</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">[한국지식재산보호원]2020년 제4차 인력채용 공고문</span>
+                                    <span class="date">2020.03.03</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">[한국지식재산보호원]2020년 제3차 인력채용 공고문</span>
+                                    <span class="date">2020.01.05</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="list03" class="conBox">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">IP 보호 사전진단 2차 지원기업 모집공고</span>
+                                    <span class="date">2020.03.16</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">2020년 해외 K-브랜드 지재권 분쟁 공동대응 전문기관 모집공고</span>
+                                    <span class="date">2020.02.14</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">2020년 국제 지재권분쟁 대응전략 지원사업 1차 공고</span>
+                                    <span class="date">2020.02.13</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">2020년 해외 진출 콘텐츠 지재권 보호 컨설팅 지원기업 모집(1차) 공고</span>
+                                    <span class="date">2020.02.11</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">2020년 국제 지재권분쟁 대응전략 지원사업 온라인사업설명회 동영상 안내</span>
+                                    <span class="date">2020.01.05</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="list04" class="conBox">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">2020년 중국 내 선점의심 상표정보 조사용역 공고(정정)</span>
+                                    <span class="date">2020.02.10</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">2020년 아세안(베트남, 태국) 상표선점 피해정보 조사용역 공고(정정)</span>
+                                    <span class="date">2020.02.10</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">콘텐츠 지식재산권 보호 지원사업 SNS 홍보 콘텐츠 제작 입찰공고</span>
+                                    <span class="date">2019.11.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">국제 지재권분쟁 예방컨설팅 지원사업 대응과제 컨설팅 방법론 입찰 재공고</span>
+                                    <span class="date">2019.10.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="listTitle">국제 지재권분쟁 예방컨설팅 지원사업 대응과제 컨설팅 방법론 입찰공고</span>
+                                    <span class="date">2019.10.01</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--공지박스 close-->
+                <div class="popup">
+                    <div class="imgBox swiper-container swiper02">
+                        <div class="swiper-wrapper">
+                            <div class="popImgs swiper-slide n1"></div>
+                            <div class="popImgs swiper-slide n2"></div>
+                            <div class="popImgs swiper-slide n3"></div>
+                        </div>
+                    </div>
+                    <div class="slick_control">
+                        <button class="btn pause swiper-button-prev2">이전</button>
+                        <button class="btn stop swiper-button-stop2">정지</button>
+                        <button class="btn next swiper-button-next2">다음</button>
+                    </div>
+                </div>
+                <script>
+                    var swiper = new Swiper('.swiper02', {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        loop: true,
+                        autoplay: true, 
+                        navigation: {
+                            nextEl: '.swiper-button-next2',
+                            stopEl: '.swiper-button-stop2',
+                            prevEl: '.swiper-button-prev2',
+                        },
+                    });
+                </script>
+                <div class="linkZone">
+                    <a href="" class="n1"><span>세미나 일정</span></a>
+                    <a href="" class="n2"><span>자료실</span></a>
+                    <a href="" class="n3"><span>법령정보</span></a>
+                    <a href="" class="n4"><span>산업재산권<br>분쟁조정위원회</span></a>
+                </div>
+            </div>
+        </article><!--art01 close-->
+        <article class="art02 wrap">
+            <div class="event">
+                <div class="event_inner_wrap">
+                    <h2>이달의 일정</h2>
+                    <div class="items swiper-container swiper03">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="" class="eventList">
+                                    <div class="sep">
+                                        <span class="sep type01 on">행</span>
+                                        <span class="sep type02">세</span>
+                                    </div>
+                                    <div class="text_Wrap">
+                                        <span class="tit">[행사] '19년 한류 콘텐츠 지식재산권 보호 컨설팅 우수 사례 발표회</span>
+                                        <span class="date">2020-03-14 ~ 2020-03-16</span>
+                                    </div>
+                                </a>
+                                <div class="bottons">
+                                    <div class="applys">
+                                        <button class="btn apply_can">신청가능</button>
+                                        <button class="btn apply_end on">신청마감</button>
+                                    </div>
+                                    <div class="schedule">
+                                        <button class="btn sched_on on">진행중</button>
+                                        <button class="btn sched_soon">진행예정</button>
+                                        <button class="btn sched_end">진행완료</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="eventList">
+                                    <div class="sep">
+                                        <span class="sep type01">행</span>
+                                        <span class="sep type02 on">세</span>
+                                    </div>
+                                    <div class="text_Wrap">
+                                        <span class="tit">3배 배상제도의 안정적 시행을 위한 공동 세미나</span>
+                                        <span class="date">2020-03-14 ~ 2020-03-16</span>
+                                    </div>
+                                </a>
+                                <div class="bottons">
+                                    <div class="applys">
+                                        <button class="btn apply_can">신청가능</button>
+                                        <button class="btn apply_end on">신청마감</button>
+                                    </div>
+                                    <div class="schedule">
+                                        <button class="btn sched_on on">진행중</button>
+                                        <button class="btn sched_soon">진행예정</button>
+                                        <button class="btn sched_end">진행완료</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="eventList">
+                                    <div class="sep">
+                                        <span class="sep type01 on">행</span>
+                                        <span class="sep type02">세</span>
+                                    </div>
+                                    <div class="text_Wrap">
+                                        <span class="tit">2019년 지식재산 보호교육 안내</span>
+                                        <span class="date">2020-03-14 ~ 2020-03-16</span>
+                                    </div>
+                                </a>  
+                                <div class="bottons">
+                                    <div class="applys">
+                                        <button class="btn apply_can">신청가능</button>
+                                        <button class="btn apply_end on">신청마감</button>
+                                    </div>
+                                    <div class="schedule">
+                                        <button class="btn sched_on on">진행중</button>
+                                        <button class="btn sched_soon">진행예정</button>
+                                        <button class="btn sched_end">진행완료</button>
+                                    </div>
+                                </div>    
+                            </div>
+                            <!-- <div class="bottons">
+                                <div class="applys">
+                                    <button class="btn apply_can">신청가능</button>
+                                    <button class="btn apply_end on">신청마감</button>
+                                </div>
+                                <div class="schedule">
+                                    <button class="btn sched_on on">진행중</button>
+                                    <button class="btn sched_soon">진행예정</button>
+                                    <button class="btn sched_end">진행완료</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="slick_control">
+                        <button class="btn type02 pause swiper-button-prev3">이전</button>
+                        <div class="swiper-pagination eventPagi"></div>
+                        <button class="btn type02 next swiper-button-next3">다음</button>
+                    </div>
+                    <script>
+                        var swiper = new Swiper('.swiper03', {
+                            direction: 'vertical',
+                            updateOnWindowResize : true,
+                            slidesPerView: 1,
+                            loop: true,
+                            autoplay: true, 
+                            navigation: {
+                                nextEl: '.swiper-button-next3',
+                                prevEl: '.swiper-button-prev3'
+                            },
+                            breakpoints: {
+                                //when window width is >= 320px
+                                280: {
+                                    direction: 'horizontal',
+                                    pagination: {
+                                        el: '.eventPagi',
+                                        type: 'fraction'
+                                    }
+                                },
+                                //when window width is >= 900px
+                                900: {
+                                    direction: 'vertical',
+                                    pagination:false
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+            </div><!--event close-->
+            <div class="iconGroup">
+                <a href="" class="n1">주요사업</a>
+                <a href="sub/sub_content03.html" class="n2">조직도/직원현황</a>
+                <a href="" class="n3">정보화사업안내</a>
+                <a href="" class="n4">업무협력현황</a>
+                <a href="" class="n5">정보공개</a>
+                <a href="" class="n6">홍보동영상</a>
+            </div>
+        </article><!--art02 close-->
+        <article class="art03 wrap">
+            <h2 class="hide">KOIPA 주요사업</h2>
+            <div class="leftTabs">
+                <ul>
+                    <li data-id="ctn01" class="on"><a href="" class="bisTab_text">국내 위조상품 단속지원</a></li>
+                    <li data-id="ctn02"><a href="" class="bisTab_text">지식재산권보호 인식제고</a></li>
+                    <li data-id="ctn03"><a href="" class="bisTab_text">국제지재권분쟁 예방 컨설팅</a></li>
+                    <li data-id="ctn04"><a href="" class="bisTab_text">국제IP분쟁대응기반 구축</a></li>
+                    <li data-id="ctn05"><a href="" class="bisTab_text">사회적약자의 지재권 보호지원</a></li>
+                    <li data-id="ctn06"><a href="" class="bisTab_text">K-브랜드 보호지원</a></li>
+                    <li data-id="ctn07"><a href="" class="bisTab_text">지재권 분쟁 공동대응 지원</a></li>
+                    <li data-id="ctn08"><a href="" class="bisTab_text">중국알리바바 위조상품 대응지원</a></li>
+                    <li data-id="ctn09"><a href="" class="bisTab_text">영업비밀 보호지원</a></li>
+                </ul>
+            </div>
+            <div class="tabContentBox">
+                <div id="ctn01" class="bisBox on">
+                    <div class="bisn01 itemBox first">
+                        <h3><a href=""><span class="num">01</span><span>오프라인 단속지원</span></a></h3>
+                        <div class="copy">위조상품 단속지원을 통해 부정경쟁행위 방지 및 건전한 상거래 질서 확립 </div>
+                        <ul class="unit">
+                            <li><a href="">지방자치단체 위조상품 단속지원</a></li>
+                            <li><a href="">상표권 특별사법경찰대 위조상품 단속지원</a></li>
+                            <li><a href="">단속 유관기관과의 협력</a></li>
+                        </ul>
+                        <div class="m_more"><a href=""><span>자세히보기</span></a></div>
+                    </div>
+                    <div class="bisn02 itemBox two">
+                        <h3><a href=""><span class="num">02</span><span>온라인 단속지원</span></a></h3>
+                        <div class="copy">온라인 단속지원을 통한 지식재산권 보호 및 소비자피해 방지</div>
+                        <ul class="unit">
+                            <li><a href="">온라인 위조상품 모니터링</a></li>
+                            <li><a href="">상표권 특별사법경찰대 단속지원</a></li>
+                            <li><a href="">위조상품 유통방지협의회 운영</a></li>
+                        </ul>
+                        <div class="m_more"><a href=""><span>자세히보기</span></a></div>
+                    </div>
+                    <div class="bisn03 itemBox last">
+                        <h3><a href=""><span class="num">03</span><span>지재권 허위표시 신고센터</span></a></h3>
+                        <div class="rowgroup">
+                            <div class="websiteImg"><a href="" class="siteLogo">IP-NAVI</a></div>
+                            <div class="rightGroup">
+                                <div class="copy">지재권 허위표시로 인한 소비자 피해를 방지</div>
+                                <ul class="unit">
+                                    <li><strong>전화번호 : </strong>1670-1279</li>
+                                    <li><strong>온라인 : </strong><a href="" target="_blank" class="blank"> www.ip-navi.or.kr</a></li>
+                                    <li><strong>전자우편 : </strong>1279@koipa.re.kr</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m_more"><a href=""><span>자세히보기</span></a></div>
+                    </div>
+                </div>
+                <div id="ctn02" class="bisBox">
+                    <div class="bisn01 itemBox first">2</div>
+                </div>
+                <div id="ctn03" class="bisBox">
+                    <div class="bisn01 itemBox first">3</div>
+                </div>
+                <div id="ctn04" class="bisBox">
+                    <div class="bisn01 itemBox first">4</div>
+                </div>
+                <div id="ctn05" class="bisBox">
+                    <div class="bisn01 itemBox first">5</div>
+                </div>
+                <div id="ctn06" class="bisBox">
+                    <div class="bisn01 itemBox first">6</div>
+                </div>
+                <div id="ctn07" class="bisBox">
+                    <div class="bisn01 itemBox first">7</div>
+                </div>
+                <div id="ctn08" class="bisBox">
+                    <div class="bisn01 itemBox first">8</div>
+                </div>
+                <div id="ctn09" class="bisBox">
+                    <div class="bisn01 itemBox first">9</div>
+                </div>
+            </div>
+        </article><!--art03 close-->
+        <article class="art04">
+            <div class="wrap">
+            <div class="letterBox">
+                <div class="letterTop">
+                    <h2>NEWS LETTER</h2>
+                    <a href="" class="more">더보기</a>
+                </div>
+                <div class="letterCont swiper-container swiper04">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="" class="items">[KOIPA LETER] 2020-02호</a>
+                        </div>
+                    </div>
+                    <div class="slick_control">
+                        <button class="btn pause swiper-button-next4">이전</button>
+                        <button class="btn next swiper-button-prev4">다음</button>
+                    </div>
+                </div>
+                <script>
+                    var swiper = new Swiper('.swiper04', {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        loop: true,
+                        navigation: {
+                        nextEl: '.swiper-button-next4',
+                        prevEl: '.swiper-button-prev4',
+                        },
+                    });
+                </script>
+            </div><!--newsletter close-->
+            <div class="snsBox">
+                <div class="snsTop">
+                    <h2>SNS 소통</h2>
+                    <div class="snsGroup">
+                        <a href="" class="n1">페이스북</a>
+                        <a href="" class="n2">네이버블로그</a>
+                        <a href="" class="n3">유투브</a>
+                        <a href="" class="n4">인스타그램</a>
+                        <a href="" class="n5">트위터</a>
+                    </div>
+                </div>
+                <div class="snsCont swiper-container swiper05">
+                    <div class="swiper-wrapper">
+                        <div class="item01 swiper-slide">
+                            <a href="" class="snsSept blog" target="_blank">
+                                <div class="layer">
+                                    <span class="btn snsTit">네이버블로그</span>
+                                    <span class="substance">[온라인 홍보 서포터즈]<br>식품도 디자인이 된다고?</span>
+                                    <button class="btn sns_more">more</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item02 swiper-slide">
+                            <a href="" class="snsSept facebook" target="_blank">
+                                <div class="layer">
+                                    <span class="btn snsTit">페이스북</span>
+                                    <span class="substance">콘텐츠의 시대, 기업이<br>반드시 알아야 할 지식재산권</span>
+                                    <button class="btn sns_more">more</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item03 swiper-slide">
+                            <a href="" class="snsSept instagram" target="_blank">
+                                <div class="layer">
+                                    <span class="btn snsTit">인스타그램</span>
+                                    <span class="substance">콘텐츠의 시대, 기업이<br>반드시 알아야 할 지식재산권</span>
+                                    <button class="btn sns_more">more</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item04 swiper-slide">
+                            <a href="" class="snsSept facebook" target="_blank">
+                                <div class="layer">
+                                    <span class="btn snsTit">페이스북</span>
+                                    <span class="substance">콘텐츠의 시대, 기업이<br>반드시 알아야 할 지식재산권</span>
+                                    <button class="btn sns_more">more</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item05 swiper-slide">
+                            <a href="" class="snsSept youtube" target="_blank">
+                                <div class="layer">
+                                    <span class="btn snsTit">유투브 동영상</span>
+                                    <span class="substance">콘텐츠의 시대, 기업이<br>반드시 알아야 할 지식재산권</span>
+                                    <button class="btn sns_more">more</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item06 swiper-slide">
+                            <a href="" class="snsSept twitter" target="_blank">
+                                <div class="layer">
+                                    <span class="btn snsTit">트위터</span>
+                                    <span class="substance">콘텐츠의 시대, 기업이<br>반드시 알아야 할 지식재산권</span>
+                                    <button class="btn sns_more">more</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll_horizontal">
+                    <div class="draggerContainer swiper-scrollbar">
+                        <div class="dragger swiper-scrollbar-drag">
+                            <div class="dragger_bar"></div>
+                        </div>
+                        <div class="draggerRail"></div>
+                    </div>
+                </div>
+                <script>
+                    var swiper = new Swiper('.swiper05', {
+                      slidesPerView: 3,
+                      spaceBetween:20,
+                      updateOnWindowResize : true,
+                      freeMode: true,
+                    //   loop:true,
+                    //   autoplay: true,
+                      scrollbar: {
+                        el: '.swiper-scrollbar',
+                        draggable: true,
+                        snapOnRelease:true
+                      },
+                        breakpoints: {
+                            //when window width is <= 320px
+                            200: {
+                            slidesPerView:'auto',
+                            freeMode: false
+                            },
+                            //when window width is >= 320px
+                            320: {
+                            slidesPerView:'auto',
+                            freeMode: false
+                            },
+                            //when window width is >= 940px
+                            940: {
+                            slidesPerView:2
+                            },
+                            //when window width is >= 1180px
+                            1180: {
+                            slidesPerView:3
+                            }
+                        }
+                    });
+                  </script>
+            </div><!--sns close-->
+        </div>
+        </article><!--art04 close-->
+        <article>
+            <div class="banner">
+                <div class="banner_inner wrap">
+                    <div class="unit_wrap swiper-container swiper06">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="" target="_blank" class="item n1">한국특허정보원</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" target="_blank" class="item n2">한국발명진흥회</a>
+                            </div>
+                                <div class="swiper-slide">
+                                <a href="" target="_blank" class="item n3">한국특허전력개발원</a>
+                            </div>
+                                <div class="swiper-slide">
+                                <a href="" target="_blank" class="item n4">한국여성발명회</a>
+                            </div>
+                                <div class="swiper-slide">
+                                <a href="" target="_blank" class="item n5">한국특허정보원</a>
+                            </div>
+                                <div class="swiper-slide">
+                                <a href="" target="_blank" class="item n6">한국발명진흥회</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick_control">
+                        <button class="btn type02 pause swiper-button-prev6">이전</button>
+                        <button class="btn type02 stop swiper-button-stop6">정지</button>
+                        <button class="btn type02 next swiper-button-next6">다음</button>
+                    </div>
+                    <script>
+                        var swiper = new Swiper('.swiper06', {
+                            slidesPerView:'auto',
+                            spaceBetween:85,
+                            loop: true,
+                            autoplay: true, 
+                            updateOnWindowResize : true,
+                            navigation: {
+                                nextEl: '.swiper-button-next6',
+                                stopEl: '.swiper-button-stop6',
+                                prevEl: '.swiper-button-prev6',
+                            },
+                            breakpoints: {
+                                //when window width is >= 280px
+                                280: {
+                                spaceBetween:200
+                                },
+                                //when window width is >= 380px
+                                380: {
+                                spaceBetween:50
+                                },
+                                //when window width is >= 480px
+                                480: {
+                                spaceBetween:85
+                                }
+                            }
+                        });
+                      </script>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <div class="footer wrap">
+            <div class="footerLogo"></div>
+            <div class="footGroup">
+                <div class="fnb">
+                    <a href=""><span>개인정보침해신고센터</span></a>
+                    <a href=""><span class="point">개인정보처리방침</span></a>
+                    <a href=""><span>이메일무단수집거부</span></a>
+                    <a href=""><span class="last">오시는길</span></a>
+                </div>
+                <div class="adress">
+                    <span>서울특별시 강남구 테해란로 131<br class="m_br">(역삼동, 한국지식재산센터 6층)</span>
+                    <span>TEL. 02-2183-5800</span>
+                    <span>FAX. 02-2183-5899</span>
+                </div>
+                <div class="copyright">
+                    <span>Copyright 2020 &copy;LJH All Rights Reserved.</span>
+                </div>
+            </div>
+            <div class="footerIconbat"></div>
+            <div class="m_pageUp"><button class="pageUpBtn">위로</button></div>
+        </div>
+    </footer>
+</body>
+</html>

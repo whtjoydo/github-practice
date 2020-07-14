@@ -1,0 +1,15 @@
+.contents .visual {
+    position: relative;
+    height:390px;
+    border-radius:15px;
+    background-color:#1a4f81;
+    background-size:cover;
+    overflow: hidden;
+}
+
+.contents .visual:after {
+    position: absolute;
+    top:0;
+    left:0;
+    background-color:#1a4f81;
+}

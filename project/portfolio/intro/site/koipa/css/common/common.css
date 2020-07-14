@@ -1,0 +1,345 @@
+* {box-sizing:border-box;}
+* {font-family: 'Noto Sans KR', sans-serif;}
+button, a {font-family: 'Noto Sans KR', sans-serif; outline:none;}
+
+body::-webkit-scrollbar {display:none;}
+
+
+/*공통요소 css*/
+a.btn {
+    position:relative;
+    display:block;
+    width:80%;
+    padding:15px 0;
+    font-size:15px;
+    font-weight:300;
+    text-align:left;
+    color:#ff5a00;
+
+    transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    
+    backface-visibility: hidden;
+}
+
+a.btn:before {
+    content:'';
+    position:absolute;
+    top:24px;
+    right:37px;
+    width:0;
+    height:9px;
+    border-top:none;
+    border-left:2px solid transparent;
+    border-right:1px solid #ff5a00;
+    border-bottom:1px solid transparent;
+
+    transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+}
+
+a.btn:after {
+    content:'';
+    position:absolute;
+    top:17px;
+    right:35px;
+    width:45px;
+    height:14px;
+    border-bottom:1px solid #ff5a00;
+
+    transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+a.btn.type02 {
+    position:relative;
+    display:block;
+    width:100%;
+    padding:15px 40px;
+    opacity:0.5;
+    border: 1px solid #fff;
+}
+
+a.btn.type02:before {
+    top: 20px;
+    right: 40px;
+    width: 0;
+    height: 15px;
+    border-top: none;
+    border-left: 5px solid transparent;
+}
+
+a.btn.type02:after {
+    width:55px;
+}
+a.btn.type02:hover {
+    opacity:1;
+}
+
+a.btn.type02:hover::after {
+    width:100px;
+}
+
+a.btn.type03 {
+    width: 100%;
+    padding:15px 25px;
+    font-size:16px;
+    color:#000;
+}
+
+a.btn.type03:after {
+    content: '';
+    position: absolute;
+    border-bottom:1px solid #333;
+    top: 25px;
+}
+
+a.btn.type03:before {
+    top: 34px;
+    right: 35px;
+    width: 10px;
+    height: 10px;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+}
+
+a.btn.type04 {
+    width:150px;
+    height:150px;
+    padding:60px 20px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #fff;
+
+    border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+a.btn.type04:hover,
+a.btn.type04:focus {
+    background:orange;
+    border: 1px solid transparent;
+    z-index:10;
+
+    transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+a.btn.type04:after,
+a.btn.type04:before {
+    display:none;
+}
+
+.buttons {
+    float: right;
+}
+
+.btn.write {
+    width: 120px;
+    padding: 8px 0;
+    color: #fff;
+    background: #333;
+    font-size: 15px;
+}
+
+span.em_b {
+    font-weight: 600;
+}
+
+span.em_blue {
+    color:#1686d4;
+}
+
+.m_br {
+    display:none;
+}
+
+.warning {
+    margin-top:10px;
+    padding-left:35px;
+    font-size:15px;
+    color:#ff5a00;
+}
+
+.scroll_table {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.scroll_table table.table {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.scroll_table table.table thead tr {
+    height:50px;
+    background:#f8f8f8;
+    border-bottom:1px solid #ccc;
+}
+
+.scroll_table table.table tbody {
+    text-align:center;
+}
+
+.scroll_table table.table tbody tr {
+    height:80px;
+    border-bottom:1px solid #ccc;
+}
+
+.scroll_table table.table td,
+.scroll_table table.table th {
+    border-right:1px solid #ccc;
+}
+
+.scroll_table table.table td:last-child,
+.scroll_table table.table th:last-child {
+    border-right:none;
+}
+
+table.bbsList {
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: 2px solid #2173b0;
+}
+
+table.bbsList thead th {
+    height:45px;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    border-bottom: 1px solid #dcdcdc;
+    background: #f9f9f9;
+}
+
+table.bbsList tbody td {
+    height:50px;
+    font-size:15px;
+    color: #777;
+    text-align: center;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+table.bbsList tbody td.title {
+    text-align:left;
+    padding:0 20px;
+}
+
+.bbsTopbox {
+    display: flex;
+    -js-display: flex;
+    -webkit-display: flex;
+    -o-display: flex;
+
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+
+    justify-content: center;
+    -webkit-box-pack:  justify;
+    -ms-flex-pack:  justify;
+
+    margin-bottom: 20px;
+}
+
+.bbsSearchbox {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 30px;
+    border: 1px solid #dfdfdf;
+    background: #f8f8f8;
+
+    display: flex;
+    -js-display: flex;
+    -webkit-display: flex;
+    -o-display: flex;
+
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+}
+
+.bbsSearchbox select {
+    margin-right: 10px;
+    height: 30px;
+    font-size: 14px;
+    width: 80px;
+    padding: 0 5px;
+}
+
+.bbsSearchbox input[type=button] {
+    height: 30px;
+    margin-left: -1px;
+    padding: 0 25px;
+    font-size: 14px;
+    background: #555;
+    color: #fff;
+    border: none;
+}
+
+.bbsSearchbox input[type=button]:focus,
+.bbsSearchbox input[type=button]:active {
+    background:#2173b0
+}
+
+.paging {
+    display: flex;
+    -js-display: flex;
+    -webkit-display: flex;
+    -o-display: flex;
+
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+}
+
+.paging a {
+    width:35px;
+    height:35px;
+    font-size: 14px;
+    margin-left:-1px;
+    color: #777;
+    border: 1px solid #ddd;
+
+    display: inline-flex;
+    -js-display: flex;
+    -webkit-display: flex;
+    -o-display: flex;
+
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+}
+
+.paging a.on {
+    position: relative;
+    z-index: 5;
+    color:#2173b0;
+    border: 1px solid #2173b0;
+}

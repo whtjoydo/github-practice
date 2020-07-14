@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+        <title>Breguet</title>
+        <link rel="stylesheet" href="../css/common/defult.css" />
+        <link rel="stylesheet" href="../css/common/common.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/responsive_main.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Lato:wght@400;900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700&display=swap" rel="stylesheet" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="../js/jquery-1.12.4.min.js"></script>
+        <script src="../js/swiper.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/jquery.easeScroll.js"></script>
+    </head>
+    <body>
+        <div class="modal ie">
+            <div class="modal_inner">
+                <h2>안내드립니다.</h2>
+                <p>본 홈페이지는 <em class="em_red">IE 10(인터넷 익스플로러) 이하</em> 환경에서<br> 불안정하게 뜰 수 있습니다.<br><br>
+                구글 크롬(Chrome) 브라우저를 사용해주시기 바랍니다.</p>
+                <a href="https://www.google.com/intl/ko/chrome/" target="_blank" title="크롬 브라우저 다운로드">크롬 브라우저 다운로드</a>
+                <button class="close">닫기</button>
+            </div>
+        </div>
+        <div class="modal youtube">
+            <div class="modal_inner type02">
+                <iframe src="https://www.youtube.com/embed/JI-M8-52l2E??autoplay=1&controls=0&enablejsapi=1&fs=0&hl=en&modestbranding=1&playsinline=1&color=white&iv_load_policy=3" frameborder="0" allowfullscreen>></iframe>
+                <a href="" target="_blank" title="view more" class="btn_discover type04">VIEW MORE</a>
+                <button class="close">닫기</button>
+            </div>
+        </div>
+        <header>
+            <div class="header_wrap">
+                <h1 class="logo">
+                    <a href="./main.html">Breguet</a>
+                </h1>
+                <div class="m_menu_bt">
+                    <a href="#" class="menuBt">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="depth1_list">
+                        <li class="depth1_item">
+                            <a href="" class="depth1_text">TIMEPIECES</a>
+                            <div class="depth2_list">
+                                <div>
+                                    <h3 class="depth2_title">COLLECTIONS</h3>
+                                    <ul>
+                                        <li class="depth2_item"><a href="" class="depth2_text">New models</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Tradition</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Classique</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Classique complications</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Marine</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Héritage</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Type XX - XXI - XXII</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Reine de Naples</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">High Jewellery</a></li>
+                                    </ul>
+                                </div>
+                                <div class="photo"></div>
+                                <div>
+                                    <ul>
+                                        <li class="depth2_supt"><a href="" class="supt_text">WATCH FINDER</a></li>
+                                        <li class="depth2_supt"><a href="" class="supt_text">MASTERPIECES</a></li>
+                                        <li class="depth2_supt"><a href="" class="supt_text">BOUTIQUE EXCLUSIVE</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="depth1_item"><a href="" class="depth1_text">JEWELLERY</a>
+                            <div class="depth2_list">
+                                <div>
+                                    <h3 class="depth2_title">JEWELLS</h3>
+                                    <ul>
+                                        <li class="depth2_item"><a href="" class="depth2_text">New models</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Timepieces</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Rings</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Earrings</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Necklaces</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Pendants</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Bracelets</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Other</a></li>
+                                    </ul>
+                                </div>
+                                <div class="photo"></div>
+                                <div>
+                                    <ul>
+                                        <li class="depth2_supt"><a href="" class="supt_text">COLLECTIONS</a></li>
+                                        <li class="depth2_supt"><a href="" class="supt_text">ACCESSORIES</a></li>
+                                        <li class="depth2_supt"><a href="" class="supt_text">CATALOGUES & PUBLICATIONS</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="depth1_item"><a href="" class="depth1_text">NEWS</a></li>
+                        <li class="depth1_item"><a href="" class="depth1_text">HOUSE OF BREGUET</a>
+                            <div class="depth2_list">
+                                <div>
+                                    <h3 class="depth2_title">PRESTIGE</h3>
+                                    <ul>
+                                        <li class="depth2_item"><a href="" class="depth2_text">The personalities</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Manufacture</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Unmistakable signs</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Partnerships</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">History</a></li>
+                                    </ul>
+                                </div>
+                                <div class="photo"></div>
+                            </div>
+                        </li>
+                        <li class="depth1_item"><a href="" class="depth1_text">SERVICES</a>
+                            <div class="depth2_list">
+                                <div>
+                                    <h3 class="depth2_title">SERVICES</h3>
+                                    <ul>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Proper maintenance</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Service Centerse</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">FAQ</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Breguet records</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Instructions for use</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Antique watches</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Stolen pieces</a></li>
+                                    </ul>
+                                </div>
+                                <div class="photo"></div>
+                            </div>
+                        </li>
+                        <li class="depth1_item"><a href="" class="depth1_text">CONTACT US</a>
+                            <div class="depth2_list">
+                                <div>
+                                    <h3 class="depth2_title">CONTACT</h3>
+                                    <ul>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Point of sale</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Schedule an appointment</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Catalogues & Publications</a></li>
+                                        <li class="depth2_item"><a href="" class="depth2_text">Contact us</a></li>
+                                    </ul>
+                                </div>
+                                <div class="photo"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="gnb">
+                    <ul>
+                        <li class="num1"><a href="">MYWATCH</a></li>
+                        <li class="num2"><a href="">CART</a></li>
+                        <li class="num3"><a href="">login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="side">
+            <div class="scrollBtn">
+                <ul>
+                    <li class="goTop on"><a href="">Home</a></li>
+                    <li class="goCon1"><a href="">History</a></li>
+                    <li class="goCon2"><a href="">New Models</a></li>
+                    <li class="goCon3"><a href="">Collection</a></li>
+                    <li class="goCon4"><a href="">News</a></li>
+                    <!-- <li class="goCon5"><a href="">Point of Sale</a></li> -->
+                    <!-- <li class="goFooter"><a href="">LorumIsum</a></li> -->
+                </ul>
+            </div>
+        </div>
+        <script src="../js/aos.js"></script>
+        <script>
+            AOS.init({
+                easing: 'ease-out-back',
+                duration: 1000
+            });
+            AOS.refresh();
+        </script>
+        <div class="fullpage contents">
+            <section class="visual sec01 on" id="box01">
+                <div class="items loopBG">
+                    <div class="title_wrap">
+                        <div class="product_item" data-aos="fade-left" data-aos-offset="500"></div>
+                        <div class="product_title" data-aos="fade-down" data-aos-easing="linear">
+                            브레게가 선보이는 <br>새로운 버전의 클래식과 <br><em>마린 타임피스</em>
+                        </div>
+                        <a href="" class="btn_discover default" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">DISCOVER<span></span></a>
+                    </div>
+                    <div class="videoBG">
+                        <video autoplay loop muted playsinline>
+                            <!-- Specify video sources -->
+                            <source src="../images/main/loopBg-MARINE-LINES.mp4" type="video/mp4" />
+
+                            <!-- FALLBACK for legacy browsers! -->
+                            <img src="../images/main/loopBg-MARINE-LINES.jpg" alt="MARINE-LINES image" />
+                        </video>
+                    </div>
+                </div>
+            </section>
+            <section class="visual sec02" id="box02">
+                <div class="items loopBG">
+                    <div class="title_wrap">
+                        <div class="product_item" data-aos="fade-left" data-aos-offset="500" data-aos-duration="800"></div>
+                        <div class="product_title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+                            브레게 컬렉션을 완성한 <br>새로운 <em>레인 드 네이플 타임피스</em>
+                        </div>
+                        <a href="" class="btn_discover default" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">DISCOVER<span></span></a>
+                    </div>
+                    <div class="videoBG">
+                        <video autoplay loop muted playsinline>
+                            <!-- Specify video sources -->
+                            <source src="../images/main/loopBg_NAPLES.mp4" type="video/mp4" />
+
+                            <!-- FALLBACK for legacy browsers! -->
+                            <img src="../images/main/loopBg_NAPLES.jpg" alt="MARINE-LINES image" />
+                          </video>
+                    </div>
+                </div>
+            </section>
+            <section class="visual sec03" id="box03">
+                <div class="items loopBG n3">
+                    <div class="title_wrap">
+                        <div class="product_item" data-aos="fade-left" data-aos-offset="500" data-aos-duration="800"></div>
+                        <div class="product_title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+                            브레게 클래식 9065 <br>타히티산 <em>머더 오브 펄 텐더 드림즈</em>
+                        </div>
+                        <a href="" class="btn_discover default" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">DISCOVER<span></span></a>
+                    </div>
+                    <div class="videoBG">
+                        <video autoplay loop muted playsinline>
+                            <!-- Specify video sources -->
+                            <source src="../images/main/loopBg-ROSE-LINES.mp4" type="video/mp4" />
+
+                            <!-- FALLBACK for legacy browsers! -->
+                            <img src="../images/main/loopBg-ROSE-LINES.jpg" alt="MARINE-LINES image" />
+                          </video>
+                    </div>
+                </div>
+            </section>
+            <div class="bottom_wrap">
+                <div class="bannerTabs">
+                    <ul>
+                        <li data-id="box01" class="on"><a href="" class="banner_text">NEW TIMEPIECES IN ITS CLASSIQUE AND MARINE LINES</a></li>
+                        <li data-id="box02"><a href="" class="banner_text">A NEW REINE DE NAPLES CREATION COMPLETES THE BREGUET COLLECTIONS</a></li>
+                        <li data-id="box03"><a href="" class="banner_text">BREGUET UNVEILS A LIMITED EDITION CLASSIQUE MODEL</a></li>
+                    </ul>
+                    <div class="banner_control">
+                        <button class="btn prev swiper-button-prev">이전</button>
+                        <button class="btn next swiper-button-next">다음</button>
+                    </div>
+                </div>
+                <div class="videoBox">
+                    <a class="video_wrap view_video" href="">
+                        <p>An undertaking that is as much technical as it is artistic with emphasis on craftsmanship, of which the watchmaker is at the forefront.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section class="contents page-start">
+            <div class="history wrap">
+                <div class="leftbox">
+                    <h2 class="skip">History</h2>
+                    <!-- <span class="breguet-ci" data-aos="fade" data-aos-duration="500">breduet</span> -->
+                    <p><em class="big">Abraham-Louis Breguet</em> In 1775, he opens his workshop in the Ile de la Cité in Paris, with the help of Abbot Joseph-François Marie, who takes him under his wings and introduces young Breguet to the French Court. French aristocracy quickly become Breguet’s clientele. Forced to leave France during the dark hours of the Revolution, he returns in 1795 to rebuild his business.</p>
+                    <div class="btnGroup">
+                        <a href="" class="btn_discover type02">DISCOVER<span></span></a>
+                        <a href="" class="btn_discover type03">READ MORE<span></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contents new-Model">
+            <div class="new-Model_inner wrap">
+                <h2 class="title type02" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">NEW MODELS</h2>
+                <div class="product_list swiper-container swiper01">
+                    <div class="swiper-wrapper">
+                        <div class="items swiper-slide" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="" class="item_tit">
+                                Reine de Naples 8918
+                                <span class="btn_discover type05">VIEW DETAILS</span>
+                            </a>
+                        </div>
+                        <div class="items n2 swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+                            <a href="" class="item_tit">
+                                Marine Tourbillon Équation Marchante 5887
+                                <span class="btn_discover type05">VIEW DETAILS</span>
+                            </a>
+                        </div>
+                        <div class="items n3 swiper-slide" data-aos="fade-up" data-aos-duration="2000">
+                            <a href="" class="item_tit">
+                                Classique 7137
+                                <span class="btn_discover type05">VIEW DETAILS</span>
+                            </a>
+                        </div>
+                        <div class="items n4 swiper-slide" data-aos="fade-up" data-aos-duration="2500">
+                            <a href="" class="item_tit">
+                                Classique 7337
+                                <span class="btn_discover type05">VIEW DETAILS</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                <div class="view_control" data-aos="fade" data-aos-duration="1500">
+                    <button class="btn pause swiper-button-next">이전</button>
+                    <button class="btn next swiper-button-prev">다음</button>
+                </div>
+                
+                <script>
+                    var swiper = new Swiper('.swiper01', {
+                        slidesPerView:'auto',
+                        // loop: true,
+                        // autoplay: true, 
+                        updateOnWindowResize : true,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        breakpoints: {
+                            //when window width is >= 280px
+                            280: {
+                            spaceBetween:200
+                            },
+                            //when window width is >= 380px
+                            380: {
+                            spaceBetween:50
+                            },
+                            //when window width is >= 480px
+                            480: {
+                            spaceBetween:55
+                            }
+                        }
+                    });
+                  </script>
+                </div>
+            </div>
+        </section>
+        <section class="contents collection">
+            <div class="collection wrap">
+                <div class="leftGroup" data-aos="fade" data-aos-duration="2500">
+                    <h2 class="title type02 letter-spacing">COLLECTION</h2>
+                    <div class="collTabs">
+                        <ul>
+                            <li data-id="timepiece" class="on"><a href="" class="collection_text letter-spacing2" onClick="AOS.refreshHard();">TIMEPIECES</a></li>
+                            <li data-id="jewalls"><a href="" class="collection_text letter-spacing2" onClick="AOS.refreshHard();">JEWELLERY</a></li>
+                        </ul>
+                    </div>
+                    <div class="list_Wrap">
+                        <div class="collList on" id="timepiece">
+                            <ul>
+                                <li class="on"><a href="" class="clt_title">Tradition</a></li>
+                                <li><a href="" class="clt_title">Classique</a></li>
+                                <li><a href="" class="clt_title">Classique complications</a></li>
+                                <li><a href="" class="clt_title">Marine</a></li>
+                                <li><a href="" class="clt_title">Héritage</a></li>
+                                <li><a href="" class="clt_title">Type XX - XXI - XXII</a></li>
+                                <li><a href="" class="clt_title">Reine de Naples</a></li>
+                                <li><a href="" class="clt_title">High Jewellery</a></li>
+                                <li><a href="" class="clt_title">Master Pieces</a></li>
+                            </ul>
+                        </div>
+                        <div class="collList" id="jewalls">
+                            <ul>
+                                <li><a href="" class="clt_title">Timepieces</a></li>
+                                <li><a href="" class="clt_title">Rings</a></li>
+                                <li><a href="" class="clt_title">Earrings</a></li>
+                                <li><a href="" class="clt_title">Necklaces</a></li>
+                                <li><a href="" class="clt_title">Pendants</a></li>
+                                <li><a href="" class="clt_title">Bracelets</a></li>
+                                <li><a href="" class="clt_title">Other</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_inner wrap">
+                    <div class="itemList on" id="timepiece">
+                        <ul>
+                            <li data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+                                <span class="product"></span>
+                                <span class="tit">Tradition</span>
+                                <span class="count"></span>
+                            </li>
+                            <li data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+                                <span class="product"></span>
+                                <span class="tit">Classique</span>
+                                <span class="count"></span>
+                            </li>
+                            <li data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+                                <span class="product"></span>
+                                <span class="tit">Classique complications</span>
+                                <span class="count"></span>
+                            </li>
+                            <li data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+                                <span class="product"></span>
+                                <span class="tit">Marine</span>
+                                <span class="count"></span>
+                            </li>
+                            <li data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+                                <span class="product"></span>
+                                <span class="tit">Héritage</span>
+                                <span class="count"></span>
+                            </li>
+                            <li data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+                                <span class="product"></span>
+                                <span class="tit">Type XX - XXI - XXII</span>
+                                <span class="count"></span>
+                            </li>
+                            <li data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+                                <span class="product"></span>
+                                <span class="tit">Reine de Naples</span>
+                                <span class="count"></span>
+                            </li>
+                            <li data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+                                <span class="product"></span>
+                                <span class="tit">High Jewellery</span>
+                                <span class="count"></span>
+                            </li>
+                            <li data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+                                <span class="product"></span>
+                                <span class="tit">Master Pieces</span>
+                                <span class="count"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="itemList" id="jewalls">
+                        <ul>
+                            <li data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+                                <span class="product"></span>
+                                <span class="tit">Timepieces</span>
+                                <span class="count"></span>
+                            </li>
+                            <li data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+                                <span class="product"></span>
+                                <span class="tit">Rings</span>
+                                <span class="count"></span>
+                            </li>
+                            <li data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+                                <span class="product"></span>
+                                <span class="tit">Earrings</span>
+                                <span class="count"></span>
+                            </li>
+                            <li data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+                                <span class="product"></span>
+                                <span class="tit">Necklaces</span>
+                                <span class="count"></span>
+                            </li>
+                            <li data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+                                <span class="product"></span>
+                                <span class="tit">Pendants</span>
+                                <span class="count"></span>
+                            </li>
+                            <li data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+                                <span class="product"></span>
+                                <span class="tit">Bracelets</span>
+                                <span class="count"></span>
+                            </li>
+                            <li data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+                                <span class="product"></span>
+                                <span class="tit">Other</span>
+                                <span class="count"></span>
+                            </li>
+                            <li class="i-none">
+                                blank
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="find_watch">
+                <a class="find_inner" href="">
+                    <h3 class="tit">WATCH FINDER</h3>
+                    <span></span>
+                    <!-- <input class="search_wrap" type="text" /> -->
+                </a>
+            </div>
+        </section>
+        <section class="contents news">
+            <div class="wrap">
+                <h2 class="title type03" data-aos="fade-up" data-aos-duration="1500">News</h2>
+                <div class="newsBox n1" data-aos="fade-up" data-aos-duration="2000">
+                    <a href="">
+                        <span class="category">Corporate</span>
+                        <h4 class="title">The Race for Water foundation remains committed to the preservation of the oceans, with the modified plan of stopovers</h4>
+                        <p class="sub_text">The House of Breguet is the main partner of Race for Water, a foundation dedicated to the preservation of water. Breguet and Race for Water continue their commitment to an odyssey that extends until 2021.</p>
+                        <span class="date">18 May 2020</span>
+                    </a>
+                </div>
+                <div class="newsBox n2" data-aos="fade-up" data-aos-duration="2000">
+                    <a href="">
+                        <span class="category">Points of sale</span>
+                        <h4 class="title">Breguet Reopens a Number of its European Boutiques</h4>
+                        <p class="sub_text">The House of Breguet is delighted to announce the reopening of several of its Boutiques in Europe. In Switzerland, stores in Geneva, Zurich and Gstaad reopened their doors on Monday May, 11, in addition to Paris and Cannes, France. In Austria, Vienna’s boutique is also open again, as well as one of the House’s newest physical representations - found in Düsseldorf, Germany. The reopening of the Milanese boutique will follow on Monday May, 18.</p>
+                        <span class="date">13 May 2020</span>
+                    </a>
+                </div>
+                <div class="newsBox n3" data-aos="fade-up" data-aos-duration="2000">
+                    <a href="">
+                        <span class="category">Collections</span>
+                        <h4 class="title">A New Reine de Naples Creation Completes the Breguet Collections</h4>
+                        <p class="sub_text">For the very first time, Breguet highlights the delicate oval shape of the dial of the Reine de Naples with pure, bright white grand feu enamel, complete with numerals in celestial shades.</p>
+                        <span class="date">5 May 2020</span>
+                    </a>
+                </div>
+                <div class="newsBox n4" data-aos="fade-up" data-aos-duration="2000">
+                    <a href="">
+                        <span class="category">Corporate</span>
+                        <h4 class="title">The Race for Water foundation remains committed to the preservation of the oceans, with the modified plan of stopovers</h4>
+                        <p class="sub_text">The House of Breguet is the main partner of Race for Water, a foundation dedicated to the preservation of water. Breguet and Race for Water continue their commitment to an odyssey that extends until 2021.</p>
+                        <span class="date">18 May 2020</span>
+                    </a>
+                </div>
+                <div class="newsBox n5" data-aos="fade-up" data-aos-duration="2000">
+                    <a href="">
+                        <span class="category">Corporate</span>
+                        <h4 class="title">The Race for Water foundation remains committed to the preservation of the oceans, with the modified plan of stopovers</h4>
+                        <p class="sub_text">The House of Breguet is the main partner of Race for Water, a foundation dedicated to the preservation of water. Breguet and Race for Water continue their commitment to an odyssey that extends until 2021.</p>
+                        <span class="date">18 May 2020</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="contents pointOfsale">
+            <div class="map_wrap">
+
+            </div>
+        </section> -->
+        <footer>
+            <div class="wrap">
+                <ul class="foot_menu depth01">
+                    <li class="foot_menu_item language"><a href="" class="de-tit">LANGUAGE</a>
+                        <div class="list">
+                            <ul class="list-lang">
+                                <li class="fr first"><a href=""><span>Français</span></a></li>
+                                <li class="de"><a href=""><span>Deutsch</span></a></li>
+                                <li class="es"><a href=""><span>Español</span></a></li>
+                                <li class="it"><a href=""><span>Italiano</span></a></li>
+                                <li class="en"><a href="/en" class="language-link lang" xml:lang="en" hreflang="en"><span>ENGLISH</span></a></li>
+                                <li class="ko"><a href="/kr" class="language-link lang" xml:lang="ko" hreflang="ko"><span>한국어</span></a></li>
+                                <li class="ja"></a><a href=""><span>日本語</span></a></li>
+                                <li class="zh-hant"><a href=""><span>简体中文</span></a></li>
+                                <li class="zh-hans"><a href=""><span>繁體中文</span></a></li>
+                                <li class="ru last"><a href=""><span>Русский</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="foot_menu_item"><a href="" class="de-tit">CAREERS</a></li>
+                    <li class="foot_menu_item"><a href="" class="de-tit">LINKS</a>
+                        <div class="list">
+                            <ul>
+                                <li class="first leaf"><a href="/en/sitemap">Sitemap</a></li>
+                                <li class="leaf"><a href="/en/links">Links</a></li>
+                                <li class="last leaf"><a href="https://www.youtube.com/user/MontresBreguet" target="_blank">Videos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="foot_menu_item"><a href="" class="de-tit">LEGAL TERMS</a>
+                        <div class="list">
+                            <ul>
+                                <li class="first leaf"><a href="/en/privacy-notice">Privacy notice</a></li>
+                                <li class="leaf"><a href="/en/terms">Terms of use</a></li>
+                                <li class="last leaf"><a href="/en/notice-regarding-cookies-pixels-and-social-plug-ins">Cookie Notice</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="foot_menu_item"><a href="" class="de-tit">SUBSCRIBE TO NEWSLETTER</a></li>
+                    <li class="foot_menu_item"><a href="" class="de-tit">PRESS</a></li>
+                    <li class="foot_menu_item"><a href="" class="de-tit">APP</a>
+                        <div class="list">
+                            <ul>
+                                <li class="down"><a href="">Download</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script>
+            $(".contents").easeScroll({
+                keyboardSupport:true,
+                touchpadSupport:true
+            });
+        </script>
+    </body>
+</html>

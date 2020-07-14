@@ -1,0 +1,114 @@
+/* (주)한신정보기술 OOO - 2014.04.01 */
+
+/* 컨텐츠 그룹 */
+#container {position:relative; margin:0; }
+#main {background:url('../images/main/main_bg.jpg') no-repeat;}
+
+/*header*/
+#header {height:145px; border-bottom:1px  solid #00336c; border-top:5px solid #00336c; width:100%; color:#fff;}
+#header {position:relative;z-index:110;}
+#header .wrap{width:1200px; vertical-align:middle;}
+#header .logo {position:absolute; padding:0; line-height:0; font-size:0;}
+#header .gnb {position:absolute; right:0px; top:0px; margin:10 0; font-size:14px;}
+
+.wrap {position:relative; height:auto; padding:0px; margin:40 auto; width:1200px; vertical-align:middle;}
+.contents {display:block; height:auto; width:1200px;  margin-bottom:20px; background-color:#fff; border:solid 1px; border-color:#e2e2e2; vertical-align:middle;  }
+
+
+/*tab*/
+#lnb {width:1300px; margin:0; text-align:center; display:block;}
+#lnb .tab ul {list-style: none; margin: 0; padding: 0; overflow: hidden; }
+#lnb .tab li {float: left;}
+#lnb .tab li a {display: block;  border-right:solid 1px #fff; text-align: center; text-decoration: none; padding: 25px 276.5px; font-size: 25px; background-color:#e2e2e2; color:#333;vertical-align:middle; }
+#lnb .tab li.current a {display: block; text-decoration:none; text-align: center; text-decoration: none; padding: 25px 276.5px; font-size: 25px; background-color: #1e7ede; color:#fff;
+	cursor: pointer;}
+		/* Style the tab content */
+#lnb .tabcontent {display: none; background-color:#e2e2e2; padding: 6px 12px; color:#fff; }
+#lnb ul.tab li.current a {cursor: pointer;}
+#lnb .tabcontent.current {display: block;}
+
+
+/*tab1*/
+.colum1 {display:inline-block}
+.colum1 .row1{display:block; padding:0px; margin-top:60px;}
+.colum1 ul li{display:block; text-align:center; padding:5px; float:left;}
+.colum1 .text{display:block; width:120px; padding:10 0px; text-align:center; float:left; font-size:15px;}
+.colum1 > ul > li:hover{display: block; text-align:center; float:left; color:#1e7ede; cursor: pointer;}
+.colum1 h2 {display:block; padding:60 30 175 30px; float:left;}
+.colum1 h2 span { display:inline-block;}
+.hr {width:87%; padding:15 10 20 80px;}
+.colum1 span {padding:0px;font-size:15px;}
+.colum1 input {margin:5 5 5 20px;}
+
+.colum2 {display:inline-block; width:1200px}
+.colum2 .row2{display:block; padding:0px; margin:15 0 0 30px; text-align:center; float:left;}
+.colum2 .row2-2{display:inline-block; padding:15 0px; text-align:center; float:left; font-size:15px;}
+.colum2 .row2-2 > img {display:inline-block; padding:3 0 10 10px; text-align:center; float:left; font-size:15px;}
+.colum2 h2 {display:block; padding:0 20 0 30px; float:left;}
+.colum2 h2 span { display:inline-block;}
+.hr {width:87%; padding:15 10 20 80px;}
+.colum2 input {padding:5 0 5 10px; width:130px; margin-top:-1px; margin-left:5px;border:solid 1px #e2e2e2;}
+.colum2 button {float:left; padding:0px; margin:0 3 3 0px;}
+.colum2 ul li {display:inline;padding:5 10 0 0px; float:left;}
+.colum2 ul li span {display:inline; padding:13 0 0px; float:left;}
+
+.colum3 {display:inline-block; width:1200px}
+.colum3 .row3 {display:block; padding:0px; margin:10 0 5 30px; text-align:center; float:left;}
+.colum3 h2 {display:block; padding:0 20 0 30px; float:left;}
+.colum3 h2 span { display:inline-block;}
+.colum3 > ul li{display:block; width:50px; text-align:center; padding:15 10 15 15px; float:left;}
+.colum3 input {margin:5px; font-size:15px; float:left; padding-top:30px; border-style:solid #989898;}
+.colum3 .text{display:block; width:20px; padding:3 0px; text-align:center; float:left; font-size:15px;}
+.colum3 > ul > li:hover{display: block; color:#1e7ede; cursor: pointer;}
+.hr {width:87%; padding:15 10 20 80px;}
+
+.colum4 {display:inline-block; width:1200px}
+.colum4 .row4 {display:block; width:500px; padding:5px; margin:0 5px; float:left; margin-bottom:20px; padding:0 350px;}
+.colum4 ul li { display:inline-block; margin:3px; }
+
+/*tab2*/
+.colum5 {display:inline-block; width:1200px; padding:0 50 50px;}
+.colum5 h2 {display:block; margin-top:70px; padding:0 0 0 5}
+.colum5 h3 {display:inline; padding:0px; margin-bottom:10px;}
+.colum5 .col1 {display:inline-block; float:left; width:403px; margin-right:10px; border:1px solid #e2e2e2; height:500px;}
+.colum5 .col2 {display:inline-block; float:left; width:674px; margin-left:10px; border:1px solid #e2e2e2; height:500px;}
+.chartbox {display:block; padding:20px; height:360px; width:auto;}
+
+
+/*sub*/
+.sub_depth_box {width:880px; border-top:2px solid #1e7ede; border-left:1px solid #e2e2e2; border-right:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2; display: inline-block; margin:20 0 20 250px; height:auto; padding-top:20px; padding:15 0px;}
+.sub_depth_box li {display:inline-block; height:25px; float:left; font-size:15px; padding:0px;}
+
+/* 풋터 */
+#footer {position:relative; z-index:11; max-width: 100%; background:#4a4c56;}
+#footer .wrap {width:1200px;vertical-align:middle;}
+/* 사이트 이동 */
+#footer .site_link {border-top:2px #e2e2e2; background-color:#e2e2e2;}
+#footer .site_link .wrap {width:1200px; padding:10 0 20px 0; margin-bottom:40px; vertical-align:middle;}
+#footer .site_link h2 {  float: left; font-size: 16px; letter-spacing: -1px; margin:28px 20px; color:#3e3e3e; line-height:1.3em; font-weight:600;}
+#footer .site_link div.sitelink_cont{float:left;display:inline; position:relative; margin:0 7px;}
+#footer .site_link div.sitelink_cont.sitelink_1 { margin-left:0;}
+#footer .site_link .sitelink_cont h3{width:186px;height:27px;  float:left; }
+#footer .site_link .sitelink_cont h3 button{padding:10px 10px 10px 40px; width:186px ; background:url('../images/main/site_link_bg.gif') no-repeat center; color:#083054;font-size:14px;text-align:left;  font-family:Nanum Gothic, "나눔고딕","나눔고딕 굵게", NanumGothicbold; color:#fff;  left:130;} 
+#footer .site_link .layer{display:none;position:absolute;width:186px; border:solid 1px #9d9d9d; background:#fff; left:130px;}
+#footer .site_link .layer h4{padding:0;background:#4a4c56;color:#fff;font-size:15px; font-weight:600; padding:10px 0 13px 10px; }
+#footer .site_link .layer .scroll{position:relative;height:173px;overflow-y:scroll;}
+#footer .site_link .layer ul{padding:0;}
+#footer .site_link .layer ul li{padding:4px 9px 6px 25px; float:left; width:135px; background:url('../images/main/site_link_bg.gif') 18px 12px;}
+#footer .site_link .layer ul li:hover { background-color:#eeeeee}
+#footer .site_link .layer ul li a{font-size:14px; }
+#footer .site_link .layer .close{position:absolute;right:10px;top:12px;}
+#footer .foot_logo { position: absolute; top:10px; }
+#footer .colgroup { padding: 0 40 40 180px; margin:auto;}
+#footer .colgroup .footer_navi ul { display:inline-block; top:40px; margin-bottom:20px; border-bottom:1px solid #818289;}
+#footer .colgroup .footer_navi ul li { float:left; padding:0 13px 10px 15px; background:url('../images/main/foot_navi.gif') no-repeat left 5px;  line-height:16px;}
+#footer .colgroup .footer_navi ul li a { font-size:14px; color:#fff; font-weight:600;}
+#footer .colgroup .footer_navi ul li:first-child { padding-left:0; background:none;}
+#footer .colgroup .footer_info address { padding:2px 0; color:#fff; font-size:13px;}
+#footer .colgroup .footer_info address a {color:#fff;}
+#footer .colgroup .footer_info address .tel { display:inline-block; margin-left:30px; padding-left:20px; background:url(/images/common/foot_tekl.gif) no-repeat left center;}
+#footer .colgroup .footer_info .copy { margin-bottom:20px;font-size:13px; color:#bdc1d6;}
+#footer .colgroup .footer_info .warning { font-size:12px; color:#848799;}
+#footer .foot_btn { position:absolute; right:0; top:85px;}
+#footer .foot_btn ul li { float:left; margin-left:10px;}
+
