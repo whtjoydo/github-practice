@@ -2,6 +2,8 @@
 
 /* reset style */
 body {overflow-x: hidden;}
+*, *:before, *:after {box-sizing:border-box;}
+a, button {cursor: pointer;}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block;}
 audio,canvas,progress,video{display:inline-block;}
 html,body,div,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ol,ul,li,blockquote,pre,button,fieldset,form,legend,table,caption,tbody,tfoot,thead,tr,th,td,iframe,article,aside,canvas,details,embed,figure,figcaption,header,footer,menu,nav,section,summary,audio,video{margin:0;padding:0;border:0;font-size:inherit;/*font-family:inherit;*/}

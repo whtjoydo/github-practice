@@ -1,22 +1,26 @@
-header {
-    position: relative;
-    width: 100%;
-    height:200px;
-    background-color: #fff;
-    transition: all 0.3s ease;
-    z-index: 90;
-}
+.wrapper {width:100%; min-width:1024px; height:100%; overflow:hidden;}
+.inner {width:1300px; min-width:1024px; margin: 0 auto; position: relative;}
 
-header .topService {
-    height:40px;
-    background-color:#2a3a67;
-}
-
-.inner {
-    width: 1300px;
-    margin: 0 auto;
-    position: relative;
-}
+header {position:relative; width:100%; height:200px; background-color:#fff; transition:all 0.3s ease; z-index:90;}
+header .topService {position:relative; height:40px; background-color:#2a3a67;}
+header .topService .topLeft {float:left; width:72%;}
+header .topService .topLeft ul li {float:left; width:20%; height:40px; margin:0;}
+header .topService .topLeft ul li > a {position:relative; width:100%; text-align:center;}
+header .topService .topLeft ul li > a:before {position:absolute; content:''; top:50%; right:0; width:1px; height:15px; background-color:#fff; transform: translateY(-50%); opacity:0.3;}
+header .topService .topLeft ul li:last-child > a:before {display:none;}
+header .topService .topLeft ul li > a span.unit {display:block; width:100%; font-size:0.75rem; font-weight:600; letter-spacing:-0.1em; line-height:40px; color:#fff; transition:all 0.3s ease;}
+header .topService .topLeft ul li > a span.unit.hover {display:none;}
+header .topService .topLeft ul li:hover > a span.unit {display:none;}
+header .topService .topLeft ul li:hover > a span.unit.hover {display:block; color:#333; background-color:#fff;}
+header .topService .topRight {position:absolute; right:0; top:0; background-color:#101d41;}
+header .topService .topRight ul li {position:relative; float:left; height:40px; margin:0;}
+header .topService .topRight ul li > a {position:relative; width:100%; text-align:center; padding:0 10px 0 15px;}
+header .topService .topRight ul li:before {position:absolute; content:''; top:50%; right:0; width:1px; height:10px; background-color:#fff; transform: translateY(-50%);}
+header .topService .topRight ul li:last-child::before {display:none;}
+header .topService .topRight ul li > a span {float:left; display:inline-block; margin-right:5px; font-size:0.75rem; font-weight:600; line-height:40px; color:#fff; transition:all 0.3s ease;}
+header .topService .topRight ul li:first-child > a {padding-left:20px;}
+header .topService .topRight ul li:last-child > a { padding:0 25px 0 10px;}
+header .topService .topRight ul li.lang > ul.con {position:absolute; left:0; bottom:0; display:none;}
 
 .depth02 {
     display:none;
