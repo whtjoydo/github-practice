@@ -9,8 +9,9 @@
     <link href="css/main.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&display=swap&subset=korean" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-    <!-- <script type="text/javascript" src="../js/swiper.min.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
@@ -83,7 +84,7 @@
                     <div class="topBtnWrap">
                         <!--all menu wrap-->
                         <button type="button" class="allMenu">
-                            <span class="skip">전체메뉴 열기</span>
+                            <h2 class="hide">전체메뉴 열기</h2>
                             <span class="bar1"></span>
                             <span class="bar2"></span>
                             <span class="bar3"></span>
@@ -104,211 +105,260 @@
                 </div>
             </div>
             <nav class="topMenu">
-                <div class="depth01">
-                    <ul class="depth01_list">
-                        <li class="depth01_item">
-                            <a href="" class="depth01_title">주요사업</a>
-                            <div class="depth02">
-                                <ul class="depth02_list">
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">경기문화창조허브</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">임산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">음악산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">방송영상산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">출판산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">전문인력양성</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">자금지원</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">수출지원</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">VRAR산업</a>
-                                    </li>
-                                </ul>
-                            </div><!--depth02 close-->
-                        </li>
-                        <li class="depth01_item">
-                            <a href="" class="depth01_title">시설이용</a>
-                            <div class="depth02">
-                                <ul class="depth02_list">
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">경기문화창조허브</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">임산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">음악산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">방송영상산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">출판산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">전문인력양성</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">자금지원</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">수출지원</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">VRAR산업</a>
-                                    </li>
-                                </ul>
-                            </div><!--depth02 close-->
-                        </li>
-                        <li class="depth01_item">
-                            <a href="" class="depth01_title">기관뉴스</a>
-                            <div class="depth02">
-                                <ul class="depth02_list">
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">경기문화창조허브</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">임산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">음악산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">방송영상산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">출판산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">전문인력양성</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">자금지원</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">수출지원</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">VRAR산업</a>
-                                    </li>
-                                </ul>
-                            </div><!--depth02 close-->
-                        </li>
-                        <li class="depth01_item">
-                            <a href="" class="depth01_title">알림마당</a>
-                            <div class="depth02">
-                                <ul class="depth02_list">
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">경기문화창조허브</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">임산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">음악산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">방송영상산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">출판산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">전문인력양성</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">자금지원</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">수출지원</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">VRAR산업</a>
-                                    </li>
-                                </ul>
-                            </div><!--depth02 close-->
-                        </li>
-                        <li class="depth01_item">
-                            <a href="" class="depth01_title">GCA소개</a>
-                            <div class="depth02">
-                                <ul class="depth02_list">
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">경기문화창조허브</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">임산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">음악산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">방송영상산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">출판산업</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">전문인력양성</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">자금지원</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">수출지원</a>
-                                    </li>
-                                    <li class="depth02_item">
-                                        <a href="" class="depth02_title">VRAR산업</a>
-                                    </li>
-                                </ul>
-                            </div><!--depth02 close-->
-                        </li>
-                    </ul>
-                </div><!--depth01 close-->
+                <div class="inner">
+                    <div class="depth01">
+                        <ul class="depth01_list">
+                            <li class="depth01_item">
+                                <a href="" class="depth01_title">주요사업</a>
+                                <div class="depth02">
+                                    <ul class="depth02_list">
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">경기문화창조허브</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">임산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">음악산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">방송영상산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">출판산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">전문인력양성</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">자금지원</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">수출지원</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">VRAR산업</a>
+                                        </li>
+                                    </ul>
+                                </div><!--depth02 close-->
+                            </li>
+                            <li class="depth01_item">
+                                <a href="" class="depth01_title">시설이용</a>
+                                <div class="depth02">
+                                    <ul class="depth02_list">
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">경기문화창조허브</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">임산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">음악산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">방송영상산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">출판산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">전문인력양성</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">자금지원</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">수출지원</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">VRAR산업</a>
+                                        </li>
+                                    </ul>
+                                </div><!--depth02 close-->
+                            </li>
+                            <li class="depth01_item">
+                                <a href="" class="depth01_title">기관뉴스</a>
+                                <div class="depth02">
+                                    <ul class="depth02_list">
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">경기문화창조허브</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">임산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">음악산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">방송영상산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">출판산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">전문인력양성</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">자금지원</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">수출지원</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">VRAR산업</a>
+                                        </li>
+                                    </ul>
+                                </div><!--depth02 close-->
+                            </li>
+                            <li class="depth01_item">
+                                <a href="" class="depth01_title">알림마당</a>
+                                <div class="depth02">
+                                    <ul class="depth02_list">
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">경기문화창조허브</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">임산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">음악산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">방송영상산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">출판산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">전문인력양성</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">자금지원</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">수출지원</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">VRAR산업</a>
+                                        </li>
+                                    </ul>
+                                </div><!--depth02 close-->
+                            </li>
+                            <li class="depth01_item">
+                                <a href="" class="depth01_title">GCA소개</a>
+                                <div class="depth02">
+                                    <ul class="depth02_list">
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">경기문화창조허브</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">임산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">음악산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">방송영상산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">출판산업</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">전문인력양성</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">자금지원</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">수출지원</a>
+                                        </li>
+                                        <li class="depth02_item">
+                                            <a href="" class="depth02_title">VRAR산업</a>
+                                        </li>
+                                    </ul>
+                                </div><!--depth02 close-->
+                            </li>
+                        </ul>
+                    </div><!--depth01 close-->
+                </div>
             </nav>
         </header>
         <main class="container">
             <aside class="screenRolling">
                 <h2 class="skip">바로가기</h2>
-                <ul>
-                    <li id="goSection1" class="active"><a href=""><span>알림</span></a></li>
-                    <li id="goSection2"><a href=""><span>사업</span></a></li>
-                    <li id="goSection3"><a href=""><span>소통</span></a></li>
-                    <li id="goTop"><a href=""><span>TOP</span></a></li>
-                </ul>
+                <ol>
+                    <li id="goSection1" class="active"><a href="">알림</a></li>
+                    <li id="goSection2"><a href="">사업</a></li>
+                    <li id="goSection3"><a href="">소통</a></li>
+                    <li id="goTop"><a href="">TOP</a></li>
+                </ol>
             </aside>
             <section class="sec01">
                 <h2 class="skip">알림</h2>
-                <div class="inner">
-                    <div class="conArea slideBox">
-                        <div class="leftBox">왼쪽영역</div>
-                        <div class="rightBox">오른쪽영역</div>
-                    </div>
-                    <div class="conBtnArea">
-                        <ul>
-                            <li>공고 알림</li>
-                            <li>교육 및 기타 알림</li>
-                            <li>월별 행사 캘린더</li>
-                        </ul>
-                        <div class="conBtn">
-                            <button type="button" class="btn prev">이전</button>
-                            <button type="button" class="btn next">다음</button>
+                <!-- Slider main container -->
+                    <div class="conArea swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="content swiper-slide">
+                                <ul>
+                                    <li class="leftBox">왼쪽영역</li>
+                                    <li class="rightBox">오른쪽영역</li>
+                                </ul>
+                            </div>
+                            <div class="content swiper-slide">
+                                <ul>
+                                    <li class="leftBox">왼쪽영역2</li>
+                                    <li class="rightBox">오른쪽영역2</li>
+                                </ul>
+                            </div>
+                            <div class="content swiper-slide">
+                                <ul>
+                                    <li class="leftBox">왼쪽영역3</li>
+                                    <li class="rightBox">오른쪽영역3</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="conBtnArea inner swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide slideItem"><a href="">공고 알림</a></div>
+                            <div class="swiper-slide slideItem"><a href="">교육 및 기타 알림</a></div>
+                            <div class="swiper-slide slideItem"><a href="">월별 행사 캘린더</a></div>
+                        </div>
+                        <div class="conBtn">
+                            <button type="button" class="btn prev swiper-button-prev">이전</button>
+                            <button type="button" class="btn next swiper-button-next">다음</button>
+                        </div>
+                    </div>
+                    <script>
+                        var galleryThumbs = new Swiper('.conArea', {
+                          spaceBetween:0,
+                          loop: true,
+                          loopedSlides:3, //looped slides should be the same
+                          centeredSlides: true,
+                          effect: 'fade',
+                          navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                          }
+                        });
+                        var galleryThumbs = new Swiper('.conBtnArea', {
+                          spaceBetween:0,
+                          slidesPerView:3,
+                          speed: 800,
+                          loop: true,
+                          loopedSlides:3, //looped slides should be the same
+                          centeredSlides: true,
+                          slideToClickedSlide:true,
+                          effect:false,
+                          navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                          }
+                        });
+                      </script>
             </section>
             <section class="sec02">
                 <h2 class="skip">사업</h2>

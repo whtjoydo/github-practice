@@ -2,7 +2,7 @@
 .inner {width:1300px; min-width:1024px; margin: 0 auto; position: relative;}
 
 header {position:relative; width:100%; height:200px; background-color:#fff; transition:all 0.3s ease; z-index:90;}
-header .topService {position:relative; height:40px; background-color:#2a3a67;}
+header .topService {position:relative; height:40px; background-color:#2a3a67; z-index:20;}
 header .topService .topLeft {float:left; width:70%;}
 header .topService .topLeft ul li {position:relative; float:left; width:20%; height:40px; margin:0;}
 header .topService .topLeft ul li > a {position:relative; width:100%; text-align:center;}
@@ -26,7 +26,7 @@ header .topService .topRight ul li.lang:hover > ul.con {visibility:visible;}
 header .topService .topRight ul li.lang > ul.con li a {width:100%; text-align:center; font-size:0.75rem; line-height:40px; text-align:center; color:#fff; opacity: 0.3;}
 header .topService .topRight ul li:hover > ul.con li:hover a {opacity: 1;}
 
-header .topBottom {position:relative; text-align:center;}
+header .topBottom {position:relative; text-align:center; z-index:10;}
 header .topBottom .logo {position:relative; padding:20px 0 10px;}
 header .topBottom .logo a {position:relative; display:inline-block; width:238px; height:63px; background:url('../images/logo_new.png') 50% 50% no-repeat;}
 header .topBottom .organization {position:absolute; top:35%; left:30px; padding:5px 15px; border:1px solid #b7b7b7; border-radius:25px;}
@@ -42,10 +42,44 @@ header .topBottom .topBtnWrap .searchBtn span.search1 {position:absolute; displa
 header .topBottom .topBtnWrap .searchBtn span.search2 {position:absolute; display:block; bottom:6px; right:5px; width:8px; height:2px; background-color:#4a515f; transform:rotate(45deg);}
 header .topBottom .topBtnWrap > section {display:none;}
 
-nav.topMenu {position: relative; width:100%; height:65px; border-top:1px solid #f5f5f5;}
-nav.topMenu .depth01 ul li {float:left;}
+nav.topMenu {position: relative; border-top:1px solid #f5f5f5;}
+nav.topMenu .depth01 {position: relative; width:92%;}
+nav.topMenu .depth01 ul li.depth01_item {float:left; text-align:center; margin:0 6.5%;}
+nav.topMenu .depth01 ul li a.depth01_title {position:relative; display:block; padding:20px 0; font-size:1.2rem; font-weight:700; transition: all 0.3s;}
+nav.topMenu .depth01 ul li a.depth01_title:before {position: absolute; content:''; visibility: hidden; left:0; bottom:0; width:100%; height:3px; background-color: #ec008c;}
+nav.topMenu .depth01 ul li:hover a.depth01_title {color:#ec008c;}
+nav.topMenu .depth01 ul li:hover a.depth01_title:before {visibility: visible;}
+nav.topMenu .depth02 {display:none;}
+
+main.container {position:relative;}
+.screenRolling {position:fixed; top:190px; right:2%; z-index:80;}
+.screenRolling ol li {margin:15px 0; transition:all 0.3s ease;}
+.screenRolling ol li:hover {transform:translateX(-15%);}
+.screenRolling ol li a {display:block; width:65px; height:65px; padding-top:30px; text-align:center; background-color:#fff; border:1px solid #ddd; border-radius:50%; box-shadow:2px 4px 0 #ddd;}
+.screenRolling ol li:last-child a {background-color:rgba(0,0,0,0.8); border:none; box-shadow:none; color:#fff;}
+.screenRolling ol li.active a {background-color:#ec008c; color:#fff; border:1px solid #fff;}
+
+section {padding-bottom:50px;}
+section.sec01 .conArea {position:relative; display:block; width:1420px; height:510px; margin:0 auto; margin-bottom:80px;}
+section.sec01 .conArea .content ul li {position:relative; display:flex; width:50%; height:510px; align-items:center; justify-content:center;}
+section.sec01 .conArea .content .leftBox {float:left; background-color:violet;}
+section.sec01 .conArea .content .rightBox {background-color:purple;}
+
+section.sec01 .conBtnArea {position:relative; overflow: hidden;}
+section.sec01 .conBtnArea .slideItem {float:left; width:426px; height:77px;}
+section.sec01 .conBtnArea .slideItem > a {display:block; padding:27px 0 27px 5.2rem; font-size:1rem; text-align:left; border:1px solid #ddd; margin-right:-1px;}
+section.sec01 .conBtnArea .slideItem.swiper-slide-next > a {text-align:right; padding:27px 5.2rem 27px 0;}
+section.sec01 .conBtnArea .swiper-slide-active {background-color: #ec008c;}
+section.sec01 .conBtnArea .swiper-slide-active a {color:#fff;}
+section.sec01 .conBtnArea .conBtn button {position: absolute; top:25%; left: 0; width: 80px; height: 82px; transition: all .5s ease; z-index: 1; background-color: #fff;}
+section.sec01 .conBtnArea .conBtn button.next {left:auto; right: 0;}
 
 
-.depth02 {
-    display:none;
-}
+section.sec02 {position:relative; padding-top:8rem; text-align: center; background:url('../images/bg_gcn.jpg') 50% no-repeat; background-size:cover; background-attachment: fixed;}
+section.sec02 .textArea {display:none;}
+section.sec02 .listArea {width:1430px; padding:2rem 0 0; background-color:rgba(25,43,93,.9);}
+section.sec02 .listArea ul li {float:left; margin:0 15px; border:1px solid red;}
+section.sec02 .listArea ul li > div.iconChange {width:65px; height:65px;}
+section.sec02 .listArea ul li > div.iconChange a {color:#fff;}
+section.sec02 .listArea ul li > div.businessBox {position:absolute; visibility: hidden;}
+section.sec02 .listArea ul li.active > div.businessBox {visibility: visible;}
