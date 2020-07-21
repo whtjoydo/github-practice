@@ -59,7 +59,7 @@ main.container {position:relative;}
 .screenRolling ol li:last-child a {background-color:rgba(0,0,0,0.8); border:none; box-shadow:none; color:#fff;}
 .screenRolling ol li.active a {background-color:#ec008c; color:#fff; border:1px solid #fff;}
 
-section {padding-bottom:50px;}
+section.sec01 {padding-bottom:50px;}
 section.sec01 .conArea {position:relative; display:block; width:1420px; height:510px; margin:0 auto; margin-bottom:80px;}
 section.sec01 .conArea .content ul li {position:relative; display:flex; width:50%; height:510px; align-items:center; justify-content:center;}
 section.sec01 .conArea .content .leftBox {float:left; background-color:violet;}
@@ -77,9 +77,9 @@ section.sec01 .conBtnArea .conBtn button.next {left:auto; right: 0;}
 
 section.sec02 {position:relative; padding-top:8rem; text-align: center; background:url('../images/bg_gcn.jpg') 50% no-repeat; background-size:cover; background-attachment: fixed;}
 section.sec02 .textArea {display:none;}
-section.sec02 .listArea {width:1430px; padding:2rem 0 0; background-color:rgba(25,43,93,.9);}
-section.sec02 .listArea ul li {float:left; margin:0 15px; border:1px solid red;}
-section.sec02 .listArea ul li > div.iconChange {width:65px; height:65px;}
-section.sec02 .listArea ul li > div.iconChange a {color:#fff;}
+section.sec02 .listArea {width:1430px; padding:2rem; margin:14rem 0 0; background-color:rgba(25,43,93,.9); display: flex; justify-content: center; align-items: center;}
+section.sec02 .listArea ul {width:1300px; display: inline-flex; justify-content: center;}
+section.sec02 .listArea ul li {width:8.5%; margin:0 15px; float:left; text-align:center; border:1px solid red;}
+section.sec02 .listArea ul li > div.iconChange a {display:block; padding-top: 80px; color:#fff;}
 section.sec02 .listArea ul li > div.businessBox {position:absolute; visibility: hidden;}
 section.sec02 .listArea ul li.active > div.businessBox {visibility: visible;}
